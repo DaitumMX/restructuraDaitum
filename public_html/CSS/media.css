@@ -40,7 +40,7 @@ display: inline-block;
 -moz-appearance:none !important;
 appearance:none !important;
 cursor:pointer;
-background:#fff url(../Imagens/resp_menu.gif)95% center no-repeat;
+background:#fff url(../Images/resp_menu.gif)95% center no-repeat;
 background-size: 18px 18px;
 float:left;
 }
@@ -165,7 +165,7 @@ display: inline-block;
 -moz-appearance:none !important;
 appearance:none !important;
 cursor:pointer;
-background:#fff url(../Imagens/resp_menu.gif)95% center no-repeat;
+background:#fff url(../Images/resp_menu.gif)95% center no-repeat;
 background-size: 18px 18px;
 float:left;
 }
@@ -325,7 +325,7 @@ display: inline-block;
 -moz-appearance:none !important;
 appearance:none !important;
 cursor:pointer;
-background:#fff url(../Imagens/resp_menu.gif)95% center no-repeat;
+background:#fff url(../Images/resp_menu.gif)95% center no-repeat;
 background-size: 18px 18px;
 float:left;
 }

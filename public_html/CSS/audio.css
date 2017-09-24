@@ -80,7 +80,7 @@ left: 50%;
 width: 100px;
 height: 100px;
 margin: -50px 0 0 -50px;
-background: url(../Imagens/mediaelementplayer/bigplay.svg) no-repeat;
+background: url(../Images/mediaelementplayer/bigplay.svg) no-repeat;
 }
 
 .mejs-overlay:hover .mejs-overlay-button {
@@ -104,7 +104,7 @@ border-radius: 5px;
 display: block;
 width: 16px;
 height: 16px;
-background: transparent url(../Imagens/loading.gif) 50% 50% no-repeat;
+background: transparent url(../Images/loading.gif) 50% 50% no-repeat;
 }
 
 /* Start: CONTROL BAR */
@@ -155,7 +155,7 @@ position: absolute;
 height: 16px;
 width: 16px;
 border: 0;
-background: transparent url(../Imagens/mediaelementplayer/controls.svg) no-repeat;
+background: transparent url(../Images/mediaelementplayer/controls.svg) no-repeat;
 }
 
 /* :focus for accessibility */

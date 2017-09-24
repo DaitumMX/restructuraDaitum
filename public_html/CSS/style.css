@@ -39,14 +39,14 @@ clear:both;
 width:100%;
 margin:0px 0px 30px 0px;
 padding:46px 80px 33px 80px;
-/*background:#ecf0f1 url(../Imagens/sample_images/neuronas.png) repeat-y top center !important;*/
+/*background:#ecf0f1 url(../Images/sample_images/neuronas.png) repeat-y top center !important;*/
 }
 
 .featured-column-gallery {
 width:100%;
 margin:0px 0px 30px 0px;
 padding:32px 0px 34px 0px;
-background:#34495e url(../Imagens/sample_images/bg_featured2.png) repeat-y top center !important;
+background:#34495e url(../Images/sample_images/bg_featured2.png) repeat-y top center !important;
 }
 
 .featured-column-gallery h1, .featured-column-gallery h2, .featured-column-gallery h3,
@@ -288,7 +288,7 @@ text-decoration:none;
 
 /*Barra indicadora de seleccion HOVER*/
 #mainmenu ul li:hover {
-background:url(../Imagens/active_menu_grey.gif) top repeat-x;
+background:url(../Images/active_menu_grey.gif) top repeat-x;
 background-color:rgba(26, 188, 156, 0.1);
 text-decoration:none;
 color:#2f87aa;
@@ -308,7 +308,7 @@ background-color:rgba(0, 130, 216, 0.1);
 
 /*Barra indicadora de seleccion Selected*/
 #mainmenu ul li.selected {
-background:url(../Imagens/active_menu_blue.gif) top repeat-x;
+background:url(../Images/active_menu_blue.gif) top repeat-x;
 background-color:rgba(26, 188, 156, 0.1);
 text-decoration:none;
 color:#2f87aa;
@@ -992,12 +992,12 @@ outline:0;
 }
 @-moz-document url-prefix(){.three .shape .overlay, .block-grid.four-up .shape .overlay { height: 234px; }}
 @-moz-document url-prefix(){.three .lightbox-item, .block-grid.four-up .lightbox-item {height:234px;}}
-.three .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:214px 235px\9; }
-.block-grid.four-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:214px 235px\9; }
-x:-o-prefocus, .three .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:214px 235px;}
-x:-o-prefocus, .block-grid.four-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:214px 235px;}
-::-ms-reveal, .three .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:214px 235px;}
-::-ms-reveal, .block-grid.four-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:214px 235px;}
+.three .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:214px 235px\9; }
+.block-grid.four-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:214px 235px\9; }
+x:-o-prefocus, .three .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:214px 235px;}
+x:-o-prefocus, .block-grid.four-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:214px 235px;}
+::-ms-reveal, .three .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:214px 235px;}
+::-ms-reveal, .block-grid.four-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:214px 235px;}
 
 .four .shape .overlay, .block-grid.three-up .shape .overlay {
 width: 296px;
@@ -1012,12 +1012,12 @@ outline:0;
 }
 @-moz-document url-prefix(){.four .shape .overlay, .block-grid.three-up .shape .overlay { height: 323px; }}
 @-moz-document url-prefix(){.four .lightbox-item, .block-grid.three-up .lightbox-item {height:323px;}}
-.four .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:296px 324px\9; }
-.block-grid.three-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:296px 324px\9; }
-x:-o-prefocus, .four .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:296px 324px;}
-x:-o-prefocus, .block-grid.three-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:296px 324px;}
-::-ms-reveal, .four .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:296px 324px;}
-::-ms-reveal, .block-grid.three-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:296px 324px;}
+.four .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:296px 324px\9; }
+.block-grid.three-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:296px 324px\9; }
+x:-o-prefocus, .four .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:296px 324px;}
+x:-o-prefocus, .block-grid.three-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:296px 324px;}
+::-ms-reveal, .four .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:296px 324px;}
+::-ms-reveal, .block-grid.three-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:296px 324px;}
 
 .six .shape .overlay, .block-grid.two-up .shape .overlay {
 width: 463px;
@@ -1032,12 +1032,12 @@ outline:0;
 }
 @-moz-document url-prefix(){.six .shape .overlay, .block-grid.two-up .shape .overlay { height: 506px; }}
 @-moz-document url-prefix(){.six .lightbox-item, .block-grid.two-up .lightbox-item {height:506px;}}
-.six .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:463px 507px\9; }
-.block-grid.two-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Imagens/shape_hexagon_hover.png\9); background-size:463px 507px\9; }
-x:-o-prefocus, .six .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:463px 507px;}
-x:-o-prefocus, .block-grid.two-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:463px 507px;}
-::-ms-reveal, .six .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:463px 507px;}
-::-ms-reveal, .block-grid.two-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Imagens/shape_hexagon_hover.png); background-size:463px 507px;}
+.six .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:463px 507px\9; }
+.block-grid.two-up .shape .lightbox-item-overlay-content:nth-of-type(1n) { z-index:600\9; background-color:transparent\9; background-image:url(../Images/shape_hexagon_hover.png\9); background-size:463px 507px\9; }
+x:-o-prefocus, .six .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:463px 507px;}
+x:-o-prefocus, .block-grid.two-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:463px 507px;}
+::-ms-reveal, .six .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:463px 507px;}
+::-ms-reveal, .block-grid.two-up .shape .lightbox-item-overlay-content {z-index:600; background:transparent url(../Images/shape_hexagon_hover.png); background-size:463px 507px;}
 
 .shape hr {border-width: 1px 0 0 !important;}
 .four .shape h6 , .block-grid.three-up .shape h6{margin-top:27%;}
@@ -1045,40 +1045,40 @@ x:-o-prefocus, .block-grid.two-up .shape .lightbox-item-overlay-content {z-index
 
 /* shapes mask */
 .three .shape .overlay.hexagon, .block-grid.four-up .shape .overlay.hexagon {
-/* background: url(../Imagens/shape_hexagon.png); */
+/* background: url(../Images/shape_hexagon.png); */
 background-size:214px 235px;
 }
 @media \0screen {
 .three .shape .overlay.hexagon, .block-grid.four-up .shape .overlay.hexagon {
 background:none; 
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale');  
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale')";	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale');  
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale')";	
 }
 }
 @-moz-document url-prefix(){.three .shape .overlay.hexagon, .block-grid.four-up .shape .overlay.hexagon { background-size:214px 234px; }}
 
 .four .shape .overlay.hexagon, .block-grid.three-up .shape .overlay.hexagon {
-background: url(../Imagens/shape_hexagon.png);
+background: url(../Images/shape_hexagon.png);
 background-size:296px 325px;
 }
 @media \0screen {
 .four .shape .overlay.hexagon, .block-grid.three-up .shape .overlay.hexagon {
 background:none; 
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale');  
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale')";	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale');  
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale')";	
 }
 }
 @-moz-document url-prefix(){.four .shape .overlay.hexagon, .block-grid.three-up .shape .overlay.hexagon { background-size:296px 323px; }}
 
 .six .shape .overlay.hexagon, .block-grid.two-up .shape .overlay.hexagon {
-background: url(../Imagens/shape_hexagon.png);
+background: url(../Images/shape_hexagon.png);
 background-size:463px 508px;
 }
 @media \0screen {
 .six .shape .overlay.hexagon, .block-grid.two-up .shape .overlay.hexagon {
 background:none; 
-filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale');  
--ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Imagens/shape_hexagon.png', sizingMethod='scale')";	
+filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale');  
+-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader( src='Images/shape_hexagon.png', sizingMethod='scale')";	
 }
 }
 @-moz-document url-prefix(){.six .shape .overlay.hexagon, .block-grid.two-up .shape .overlay.hexagon { background-size:463px 506px; }}
@@ -1321,7 +1321,7 @@ border-radius: 5px;
 }
 
 .quote-note {
-background-image:url(../Imagens/testi-bg.gif);
+background-image:url(../Images/testi-bg.gif);
 background-repeat:repeat-y;
 border: solid 1px #dbdcde; 
 -webkit-border-radius: 6px;
@@ -1809,7 +1809,7 @@ display:inline;
 .loading {
 font-size:13px;
 height:20px;
-background:url(../Imagens/loading.gif) 0 4px no-repeat;
+background:url(../Images/loading.gif) 0 4px no-repeat;
 margin:5px 0px 0px 7px;
 padding:0px 0px 0px 23px;
 color:#797979;
@@ -1955,19 +1955,19 @@ width:143px;
 height:153px;
 margin-top:-117px;
 margin-bottom:-34px;
-background:url(../Imagens/footer_button.png) no-repeat;
+background:url(../Images/footer_button.png) no-repeat;
 position:relative;
 left:171px;
 }
 
 @media all and (-webkit-min-device-pixel-ratio: 1.5) {
 .say-hello {
-background:url(../Imagens/footer_button@2x.png) no-repeat;
+background:url(../Images/footer_button@2x.png) no-repeat;
 background-size: 143px 153px;
 }
 }
 
-@media \0screen {.say-hello {background:url(../Imagens/footer_button.png) no-repeat !important;}}
+@media \0screen {.say-hello {background:url(../Images/footer_button.png) no-repeat !important;}}
 
 .say-hello h4 a, .say-hello h4 a:visited {
 color:#fff;

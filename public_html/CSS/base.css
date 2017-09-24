@@ -920,11 +920,11 @@ input[type="password"] {font-family:Arial, Helvetica, sans-serif;}
 
 input[type="checkbox"] {display:none;}
 input[type="checkbox"] + label, input[type="radio"] + label {font-weight:normal; font-size:13px;}
-input[type="checkbox"] + label span {display:inline-block; width:19px; height:19px; margin:-4px 4px 0 0; vertical-align:middle; background:url(../Imagens/radiocheck.png) left top no-repeat; cursor:pointer;}
-input[type="checkbox"]:checked + label span {background:url(../Imagens/radiocheck.png) -20px top no-repeat;}
+input[type="checkbox"] + label span {display:inline-block; width:19px; height:19px; margin:-4px 4px 0 0; vertical-align:middle; background:url(../Images/radiocheck.png) left top no-repeat; cursor:pointer;}
+input[type="checkbox"]:checked + label span {background:url(../Images/radiocheck.png) -20px top no-repeat;}
 input[type="radio"] {display:none;}
-input[type="radio"] + label span {display:inline-block; width:19px; height:19px; margin:-4px 4px 0 0; vertical-align:middle; background:url(../Imagens/radiocheck.png) -38px top no-repeat; cursor:pointer;}
-input[type="radio"]:checked + label span {background:url(../Imagens/radiocheck.png) -58px top no-repeat;}
+input[type="radio"] + label span {display:inline-block; width:19px; height:19px; margin:-4px 4px 0 0; vertical-align:middle; background:url(../Images/radiocheck.png) -38px top no-repeat; cursor:pointer;}
+input[type="radio"]:checked + label span {background:url(../Images/radiocheck.png) -58px top no-repeat;}
 
 input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, textarea:focus {
 border: 1px solid #1E3747 !important;
@@ -1219,7 +1219,7 @@ border-radius:100px / 10px;
 
 /***** Code Styling *****/
 pre {
-/* background:url(../Imagens/pre_bg.gif) repeat 0px -8px; */
+/* background:url(../Images/pre_bg.gif) repeat 0px -8px; */
 -webkit-border-radius: 5px;
 -moz-border-radius: 5px;
 border-radius: 5px;
@@ -1437,11 +1437,11 @@ display:inline-block;
 .promo-box.grey p {color:#646a6b;}
 .promo-box.grey .promo-button i {background:#7f8c8d; color:#ecf0f1;}
 
-.promo-button.green {background:url(../Imagens/active_menu_green.gif) top repeat-x; background-color:rgba(26, 188, 156, 0.1);}
-.promo-button.blue {background:url(../Imagens/active_menu_blue.gif) top repeat-x; background-color:rgba(52, 152, 219, 0.2);}
-.promo-button.red {background:url(../Imagens/active_menu_red.gif) top repeat-x; background-color:rgba(231, 76, 60, 0.2);}
-.promo-button.orange {background:url(../Imagens/active_menu_orange.gif) top repeat-x; background-color:rgba(230, 126, 34, 0.2);}
-.promo-button.grey {background:url(../Imagens/active_menu_grey.gif) top repeat-x; background-color:rgba(255, 255, 255, 0.2);}
+.promo-button.green {background:url(../Images/active_menu_green.gif) top repeat-x; background-color:rgba(26, 188, 156, 0.1);}
+.promo-button.blue {background:url(../Images/active_menu_blue.gif) top repeat-x; background-color:rgba(52, 152, 219, 0.2);}
+.promo-button.red {background:url(../Images/active_menu_red.gif) top repeat-x; background-color:rgba(231, 76, 60, 0.2);}
+.promo-button.orange {background:url(../Images/active_menu_orange.gif) top repeat-x; background-color:rgba(230, 126, 34, 0.2);}
+.promo-button.grey {background:url(../Images/active_menu_grey.gif) top repeat-x; background-color:rgba(255, 255, 255, 0.2);}
 
 /***** Accordion Styling *****/
 .accordion-title {
@@ -1637,7 +1637,7 @@ max-height: 100%;
 }
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-background-image: url('../Imagens/fancybox_sprite.png');
+background-image: url('../Images/fancybox_sprite.png');
 }
 
 #fancybox-loading {
@@ -1655,7 +1655,7 @@ z-index: 8060;
 #fancybox-loading div {
 width: 44px;
 height: 44px;
-background: url('../Imagens/loading_lightbox.gif') center center no-repeat;
+background: url('../Images/loading_lightbox.gif') center center no-repeat;
 }
 
 .fancybox-close {
@@ -1675,7 +1675,7 @@ width: 40%;
 height: 100%;
 cursor: pointer;
 text-decoration: none;
-background: transparent url('../Imagens/blank.gif'); /* helps IE */
+background: transparent url('../Images/blank.gif'); /* helps IE */
 -webkit-tap-highlight-color: rgba(0,0,0,0);
 z-index: 8040;
 }
@@ -1824,7 +1824,7 @@ only screen and (min--moz-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5){
 
 #fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
-background-image: url('../Imagens/fancybox_sprite@2x.png');
+background-image: url('../Images/fancybox_sprite@2x.png');
 background-size: 44px 152px; /*The size of the normal image, half the size of the hi-res image*/
 }
 }
