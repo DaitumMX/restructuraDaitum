@@ -1,17 +1,727 @@
 <!DOCTYPE html>
 <!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-@DvdFortoul
+
+index.html        23/09/2017
+
+Ultima Actualización: 26/08/2017
+
+ * Copyright (c) 2017 Daitum Web Solution
+ * 
+ * http://www.daitum.com.mx/
+ * soporte@daitum.com.mx
+ * contacto@daitum.com.mx
+ *
+ * Este software es confidencial y de uso exclusivo de:
+ * Daitum Web Solutions - http://www.daitum.com.mx/
+
+@author DvdFortoul
+
 -->
-<html>
+
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="es"> <!--<![endif]-->
+
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Daitum | Soluciones Tecnológicas | Diseño y Desarrollo Web | Páginas Web</title>
+        <meta name="description" content="Profesionales en Soluciones Tecnológicas, diseño web y desarrollo de sitios web, integración de tecnológias, administradores de contenido, tienda en linea, eLearning, posicionamiento SEO, dominios y hospedaje web.">
+        <meta name="keywords" content="daitum,pagina web,soluciones web,diseño web,desarrollo web,paginas web,portal web,sitios web,paginas de internet,sito de internet,diseñadores web,diseño de paginas web,aplicaciones web,tienda en linea,soluciones web,software a la medida,soporte web,diseño grafico,consultoria web,administradores de contenido,midleware,desarrollo de software,plataforma,hosting,dominios">
+        <meta name="robots" content="index,follow">
+        <meta name="revisit-after" content="5 days">
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="daitum-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Stylesheets Files       // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/media.css"/>
+        <link rel="stylesheet" href="CSS/revolution.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/media-slideshow.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/noscript.css" media="screen,all" id="noscript"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Google Webfont Files     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //        Favicon Files         // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="shortcut icon" href="Images/favicon.ico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Javascript Files        // -->
+        <!-- ////////////////////////////////// -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="JS/jquery.easing-1.3.min.js"></script>
+        <script src="JS/modernizr.js"></script>
+        <script src="JS/superfish.js"></script>
+        <script src="JS/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="JS/jquery.themepunch.plugins.min.js"></script>
+        <script src="JS/jquery.themepunch.revolution.min.js"></script>
+        <script src="JS/mediaelement-and-player.min.js"></script>
+        <script src="JS/jquery.fancybox.js?v=2.0.6"></script>
+        <script src="JS/jquery.fancybox-media.js?v=1.0.3"></script>
+        <script src="JS/jquery.donutchart.js"></script>
+        <script src="JS/jflickrfeed.min.js"></script>
+        <script src="JS/jquery.twitter.js"></script>
+        <script src="JS/accordion-functions.js" ></script>
+        <script src="JS/theme-functions.js"></script>
+        <script src="JS/jquery.retina.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-66079829-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                //Retina Image
+                $('img.retina').retina('@2x');
+
+                //Slideshow
+                $('.banner').revolution({
+                    delay: 12000, //milesimas de segundo que dura cada slide 1000= 1seg
+                    startwidth: 1040,
+                    startheight: 463,
+                    onHoverStop: "off", // Detener Banner despues del timepo que flota el Slide on/off
+
+                    thumbWidth: 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                    thumbHeight: 50,
+                    thumbAmount: 3,
+                    hideThumbs: 0,
+                    navigationType: "bullet", // bullet, thumb, none
+                    navigationArrows: "none", // nexttobullets, solo (old name verticalcentered), none
+
+                    navigationStyle: "round-old", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+                    navigationHAlign: "center", // Vertical Align top,center,bottom
+                    navigationVAlign: "bottom", // Horizontal Align left,center,right
+                    navigationHOffset: -419,
+                    navigationVOffset: 72,
+                    touchenabled: "on", // Enable Swipe Function : on/off
+
+                    stopAtSlide: -1, // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                    stopAfterLoops: -1, // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+                    hideCaptionAtLimit: 0, // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                    hideAllCaptionAtLilmit: 0, // Hide all The Captions if Width of Browser is less then this value
+                    hideSliderAtLimit: 0, // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+                    fullWidth: "on",
+                    shadow: 0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+                })
+
+            });
+        </script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
     </head>
     <body>
-        <div>TODO write content here</div>
+        <!-- header inicia aqui -->
+        <header>
+
+            <!-- informacion superiror inicia aqui -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column">
+                        <!-- hubicacion del logo -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img src="Images/logo.png" alt="Daitum" class="retina"/>
+                            </a>
+                        </div>           
+                        <!-- logos redes sociales -->
+
+                        <div id="top-socials">
+                            <ul>                                
+                                <li class="facebook-color">
+                                    <a href="https://www.facebook.com/daitum.websolutions" target="_blank">
+                                        <i class="social-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter-color">
+                                    <a href="https://twitter.com/DaitumWS" target="_blank">
+                                        <i class="social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="googleplus-color">
+                                    <a href="https://plus.google.com/u/0/113460768975189169658/about" target="_blank">
+                                        <i class="social-googleplus"></i>
+                                    </a>
+                                </li>
+                                <li class="linkedin-color">
+                                    <a href="https://www.linkedin.com/company/daitum-web-solutions" target="_blank">
+                                        <i class="social-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- fin de informacion superior -->        
+
+            <div id="mainmenu-wrapper">
+                <div class="left-menu">
+
+                    <!-- menu desplegable -->
+                    <nav id="mainmenu">
+                        <ul id="menu">
+                            <li class="dropdown selected">
+                                <a href="index.html">Inicio</a>
+                                <span class="desc-menu">Daitum WS</span>
+                            </li>                                                   
+                            <li class="dropdown">
+                                <a href="Daitum.html">Daitum</a>
+                                <span class="desc-menu">¿Quiénes Somos?</span>
+                                <ul> 
+                                    <li>
+                                        <a href="Proyectos.html">Proyectos</a>
+                                    </li>
+                                    <li>
+                                        <a href="Equipo.html">Nuestro Equipo</a>
+                                    </li>
+                                    <li>
+                                        <a href="Clientes.html">Nuestros Clientes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Galeria.html">Galería</a>
+                                <span class="desc-menu">Resultados</span>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="Servicios.html">Servicios</a>
+                                <span class="desc-menu">¿Qué Ofrecemos?</span>
+                                <ul>
+                                    <li>
+                                        <a href="DisWeb.html">Diseño Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Plantillas.html">Plantillas</a>
+                                            </li>
+                                            <li>
+                                                <a href="Dmedida.html">Diseño a la Medida</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="DevWeb.html">Desarrollo Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Admincont.html">Administradores de Contenido</a>
+                                            </li>
+                                            <li>
+                                                <a href="Appmedida.html">Aplicaciones Web a la Medida</a>
+                                            </li>
+                                            <li>
+                                                <a href="Aplicaciones.html">Nuestras Aplicaciones Web</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Consultoria.html">Consultoría</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Middleware.html">Middleware</a>
+                                            </li>
+                                            <li>
+                                                <a href="Software.html">Desarrollo</a>
+                                            </li>
+                                            <li>
+                                                <a href="Plataforma.html">Plataforma</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Soporte.html">Soporte y Mantenimiento</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Paquetes.html">Paquetes</a>
+                                <span class="desc-menu">Costos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Promociones.html">Promociones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Contacto.html">Contacto</a>
+                                <span class="desc-menu">Contactanos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Rsociales.html">Redes Sociales</a>
+                                    </li>
+                                    <li>
+                                        <a href="Testimonios.html">Testimonios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Comentarios.html">Comentarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Faqs.html">Preguntas Frecuentes (FAQs)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Login</a>
+                                <span class="desc-menu">Iniciar Sesión</span>
+                                <ul>
+                                    <li>
+                                        <a href="http://clientes.daitum.com.mx/">Panel de Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Empleados</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- fin del menu --> 
+
+                </div>
+
+                <div class="right-menu" id="top-search">
+                    <a class="trigger" href="#">
+                        <i class="icon-search"></i>
+                    </a>
+                    <div class="search-panel">
+                        <ul>
+                            <li>
+                                <form id="search" action="http://www.google.com/cse" method="get" target="_blank">
+                                    <fieldset class="search-fieldset">
+                                        <input type="hidden" name="cx" value="009928480916599957275:fdbqc9ch8m4" />
+                                        <input type="text" name="q" id="search-form" value="escribe y pulsa enter" onblur="if (this.value == '') {
+                                                    this.value = 'escribe y pulsa enter';
+                                                }" onfocus="if (this.value == 'escribe y pulsa enter') {
+                                                            this.value = '';
+                                                        }" />
+                                        <!--<!--<input type="hidden" name="q" value="site:www.daitum.com.mx" />-->-->
+                                    </fieldset>      						
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- fin del header -->
+
+        <!-- slideshow incia aqui -->
+        <section id="slideshow-container">
+            <div class="banner">            
+
+                <ul>      
+                    <!-- slide 1 -->
+                    <li data-transition="fade">
+                        <img src="Images/slideshow/transparent.png" alt="" style="background:#2980b9">
+                        <div class="caption general_caption lfb" data-x="-432" data-y="0" data-speed="2000" data-endspeed="1000" data-start="100" data-end="8700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld2_bgh.jpg" alt=""></div>
+                        <!--<div class="caption general_caption lfb" data-x="-432" data-y="190" data-speed="2000" data-endspeed="1000" data-start="300" data-end="7700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_bg1.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="-432" data-y="284" data-speed="2300" data-endspeed="1000" data-start="600" data-end="7800" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_bg2.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="-432" data-y="294" data-speed="2600" data-endspeed="1000" data-start="900" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_bg3.png" alt=""></div>-->
+                        <div class="caption general_caption pst_media12 lft"  data-x="58" data-y="119" data-speed="2200" data-endspeed="900" data-start="800" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><h1 class="bold">DAITUM</h1></div>
+                        <div class="caption general_caption pst_media lft"  data-x="58" data-y="175" data-speed="2200" data-endspeed="900" data-start="600" data-end="8100" data-easing="easeOutExpo" data-endeasing="easeInBack"><h2>SERVICIOS Y APLICACIONES WEB</h2></div>
+                        <div class="caption randomrotate" data-x="58" data-y="242" data-speed="1200" data-start="700" data-end="8000" data-easing="easeOutExpo"><a href="Servicios.html" class="button medium white">Ver más...</a></div>
+
+                        <div class="caption general_caption lfb" data-x="593" data-y="5" data-speed="4000" data-endspeed="1000" data-start="100" data-end="8200" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon1.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="779" data-y="13" data-speed="4000" data-endspeed="1000" data-start="200" data-end="8100" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon2.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="887" data-y="158" data-speed="4000" data-endspeed="1000" data-start="300" data-end="7900" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon3.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="795" data-y="293" data-speed="4000" data-endspeed="1000" data-start="600" data-end="7900" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon4.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="585" data-y="300" data-speed="4000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon5.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="492" data-y="165" data-speed="4000" data-endspeed="1000" data-start="400" data-end="7800" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon6.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="683" data-y="167" data-speed="4000" data-endspeed="1000" data-start="500" data-end="7700" data-easing="easeOutElastic" data-endeasing="easeInExpo"><img src="Images/slideshow/sld1_icon7.png" alt=""></div>
+                    </li>
+
+                    <!-- slide 2 -->
+                    <li data-transition="fade">
+                        <img src="Images/slideshow/transparent.png" alt="" style="background:#f39c12">
+                        <div class="caption general_caption fade" data-x="-432" data-y="0" data-speed="2000" data-endspeed="1000" data-start="100" data-end="8700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld3_bgh.jpg" alt=""></div>
+                        <div class="caption randomrotate" data-x="-43" data-y="0" data-speed="1200" data-start="200" data-end="7500" data-easing="easeOutExpo"><img src="Images/slideshow/sld2_ornament1.png" alt=""></div>
+                        <div class="caption randomrotate" data-x="244" data-y="0" data-speed="1200" data-start="400" data-end="7800" data-easing="easeOutExpo"><img src="Images/slideshow/sld2_ornament2.png" alt=""></div>
+                        <div class="caption randomrotate" data-x="580" data-y="0" data-speed="1200" data-start="400" data-end="7800" data-easing="easeOutExpo"><img src="Images/slideshow/sld2_ornament3.png" alt=""></div>
+                        <div class="caption randomrotate" data-x="915" data-y="0" data-speed="1200" data-start="200" data-end="7500" data-easing="easeOutExpo"><img src="Images/slideshow/sld2_ornament4.png" alt=""></div>
+
+                        <div class="caption general_caption pst_media2 lft"  data-x="228" data-y="124" data-speed="2200" data-endspeed="900" data-start="600" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><h1 class="bold btm-line">El Camino al Éxito</h1></div>
+                        <div class="caption general_caption lfb"  data-x="227" data-y="214" data-speed="2200" data-endspeed="900" data-start="800" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><p class="lead text-center">Dale un enfoque moderno y atractivo a tus proyectos... <br/>Haz realidad tus ideas.</p></div>
+                    </li>
+
+                    <!-- slide 3 -->
+                    <li data-transition="fade">
+                        <img src="Images/slideshow/transparent.png" alt="" style="background:#1e3719">                    
+                        <div class="caption general_caption fade" data-x="-432" data-y="0" data-speed="2000" data-endspeed="1000" data-start="100" data-end="8700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld7_bgh.jpg" alt=""></div>
+                        <!--<div class="caption pst_media13 randomrotate" data-x="319" data-y="24" data-speed="2200" data-start="300" data-easing="easeOutExpo"><img src="Images/slideshow/sld3_ornament4.png" alt=""></div>
+                        <div class="caption pst_media13 randomrotate" data-x="-81" data-y="113" data-speed="2200" data-start="100" data-easing="easeOutExpo"><img src="Images/slideshow/sld3_ornament5.png" alt=""></div>
+                        <div class="caption pst_media13 randomrotate" data-x="-3" data-y="52" data-speed="2200" data-start="600" data-easing="easeOutExpo"><img src="Images/slideshow/sld3_ornament3.png" alt=""></div>
+                        <div class="caption pst_media13 randomrotate" data-x="-26" data-y="0" data-speed="2200" data-start="1200" data-easing="easeOutExpo"><img src="Images/slideshow/sld3_ornament2.png" alt=""></div>
+                        <div class="caption pst_media13 randomrotate" data-x="1" data-y="47" data-speed="2200" data-start="900" data-easing="easeOutExpo"><img src="Images/slideshow/sld3_ornament1.png" alt=""></div>-->                    
+
+                        <div class="caption pst_media13 video_box fade" data-x="51" data-y="63" data-speed="900" data-start="800" data-easing="easeOutBack"><img src="Images/slideshow/sld_videobg.png" alt=""></div>
+                        <div class="caption pst_media13 video_box lfb" data-x="51" data-y="63" data-speed="900" data-start="500" data-easing="easeOutBack"><iframe src="//www.youtube.com/embed/kHj7fqbNaQw"></iframe></div>
+                        <div class="caption general_caption media_hide lfr fadeout"  data-x="577" data-y="80" data-speed="900" data-start="100" data-easing="easeOutBack"><h1 class="bold">Nuestra Historia</h1></div>
+                        <div class="caption general_caption lfr fadeout"  data-x="577" data-y="153" data-speed="800" data-start="1200" data-easing="easeOutBack">
+                            <p class="lead">Un proyecto enriquecido por nuestra imaginación.<br/>Creado para unir mundos y ...<br/>¡Caminar hacia el futuro!</p>
+                        </div>
+                        <div class="caption general_caption media_hide lfb fadeout"  data-x="581" data-y="258" data-speed="900" data-start="1400" data-easing="easeOutBack"><a href="https://www.youtube.com/watch?v=kHj7fqbNaQw" target="_blank"><img src="Images/slideshow/sld3_img1.png" alt=""></a></div>
+                        <!--<div class="caption general_caption media_hide lfb fadeout"  data-x="771" data-y="257" data-speed="900" data-start="2200" data-easing="easeOutBack"><img src="Images/slideshow/sld3_img2.png" alt=""></div>
+                        <div class="caption general_caption pst_media3 lfb fadeout"  data-x="730" data-y="254" data-speed="900" data-start="1800" data-easing="easeOutBack"><h1 class="handwrite">or</h1></div>-->
+                    </li>
+
+                    <!-- slide 4 -->
+                    <li data-transition="fade">
+                        <img src="Images/slideshow/transparent.png" alt="" style="background:#e4e6e6">
+                        <div class="caption general_caption fade" data-x="-432" data-y="-300" data-speed="2000" data-endspeed="1000" data-start="100" data-end="8700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld6_bgh.jpg" alt=""></div>
+                        <!--<div class="caption general_caption lfb" data-x="-432" data-y="0" data-speed="2000" data-endspeed="1000" data-start="100" data-end="7700" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld4_bg1.png" alt=""></div>
+                        <div class="caption general_caption lfb" data-x="520" data-y="28" data-speed="3000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Images/slideshow/sld4_img1.png" alt=""></div>-->
+                        <div class="caption general_caption pst_media14 lfl ltl"  data-x="56" data-y="83" data-speed="900" data-endspeed="900" data-start="100" data-end="5700" data-easing="easeOutBack" data-endeasing="easeInBack"><h1 class="bold blue-text">Construyendo Juntos</h1></div>
+                        <div class="caption general_caption lfl ltl "  data-x="56" data-y="162" data-speed="900" data-endspeed="900" data-start="800" data-end="6200" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <p class="lead-alt"><i class="icon-ok-sign"></i>Páginas y Aplicaciones Web para tu Negocio.</p>
+                        </div>
+                        <div class="caption general_caption pst_media4 lfl ltl"  data-x="56" data-y="210" data-speed="900" data-endspeed="900" data-start="1300" data-end="6700" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <p class="lead-alt"><i class="icon-ok-sign"></i>Servicios Web con la mejor Tecnología.</p>
+                        </div>
+                        <div class="caption general_caption pst_media5 lfl ltl"  data-x="56" data-y="258" data-speed="900" data-endspeed="900" data-start="1800" data-end="7200" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <p class="lead-alt"><i class="icon-ok-sign"></i>Diseños Vanguardistas, Aspectos Dinámicos.</p>
+                        </div>
+                    </li>   
+                </ul>
+                <div class="tp-bannertimer tp-top"></div>
+
+            </div>        
+        </section>
+        <!-- slideshow fin -->
+
+        <!-- slide box start here -->
+        <section id="slide-box">
+            <div class="row">
+                <div class="twelve column">                    	
+                    <div class="promo-box">
+                        <div class="promo-text">
+                            <div class="flatborder  left">                           
+                                <i class="flat-select small"></i>
+                            </div>
+                            <h3>Libre de Elegir tu Diseño.</h3>
+                            <p>Puedes adoptar entre nuestra variedad de plantillas prediseñadas o dejar volar tu imaginación...</p>
+                        </div>
+                        <div class="promo-button blue">
+                            <a href="Plantillas.html"><h3>Diseños</h3><i class="icon-chevron-right"></i></a>
+                        </div>
+                    </div>                                   
+                </div>
+            </div>    
+        </section>
+        <!-- slide box end here -->
+
+        <!-- inicio de contenido -->
+        <section class="content-wrapper">
+            <div class="row">
+                <div class="twelve column smallmargin-top2">
+                    <ul class="block-grid-nomargin three-up mobile-style">
+                        <li>
+                            <div class="animated-column text-center">
+                                <div class="flatborder">                           
+                                    <i class="flat-check medium"></i>
+                                </div>    
+                                <h3>Más Valor</h3> 
+                                <p class="letcolumanim">Dale plusvalía a tus ideas e impulsa <br> tu negocio hacia la cima. <br>¡Muéstraselo al Mundo!</p>
+                            </div>	
+                        </li>
+                        <li>
+                            <div class="animated-column text-center">
+                                <div class="flatborder">                           
+                                    <i class="flat-ui medium"></i>
+                                </div>    
+                                <h3>Distintas Formas</h3> 
+                                <p class="letcolumanim">Ve de la mano con los avances, sé novedoso. ¡Usa la Tecnología a tu favor!</p>
+                            </div>	
+                        </li>
+                        <li>
+                            <div class="animated-column text-center">
+                                <div class="flatborder">                           
+                                    <i class="flat-statistic medium"></i>
+                                </div>    
+                                <h3>Posicionamiento SEO</h3> 
+                                <p class="letcolumanim">Técnicas sobresalientes de código para posicionamiento de búsqueda y navegación Web.</p>
+                            </div>	
+                        </li>                            
+                    </ul>
+                </div>
+            </div>        
+
+            <!--
+            <div class="row">        
+                    <div class="twelve column smallmargin-bottom">
+                    <h3 class="title-line"><span>Algunos Proyectos</span></h3>
+                </div>
+                
+                <div class="three column text-center mobile-two">            	
+                    <div class="shape">
+                        <div class="overlay hexagon"></div>
+                        <div class="teaser">                                                
+                            <div class="teaser-preview-box">
+                                    
+                                <div class="lightbox-item"> 
+                                    <img src="Images/portfolio_thumb/p1.jpg" alt="" />
+                                    <div class="lightbox-item-overlay-content"> 
+                                        <h6>Proyecto 1</h6>
+                                        <hr/>
+                                        <p>Alguna descripcion del proyecto</p>		
+                                        <a class="preview fancybox" href="Images/portfolio_big/p1.jpg" data-fancybox-group="gallery" title="Some of project description here"><i class="icon-search"></i></a>
+                                        <a class="permalink" href="portfolio-single.html"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>  
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="smallmargin-bottom">Proyecto 1</h5>
+                    <p>Algo mas</p>               
+                </div>
+                
+                <div class="three column text-center mobile-two">            	
+                    <div class="shape">
+                        <div class="overlay hexagon"></div>
+                        <div class="teaser">                                                
+                            <div class="teaser-preview-box">
+                                    
+                                <div class="lightbox-item"> 
+                                    <img src="Images/portfolio_thumb/p2.jpg" alt="" />
+                                    <div class="lightbox-item-overlay-content"> 
+                                        <h6>Proyecto 2</h6>
+                                        <hr/>
+                                        <p>Alguna descripcion del proyecto</p>		
+                                        <a class="preview fancybox" href="Images/portfolio_big/p2.jpg" data-fancybox-group="gallery" title="Some of project description here"><i class="icon-search"></i></a>
+                                        <a class="permalink" href="portfolio-single.html"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>  
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="smallmargin-bottom">Proyecto2</h5>
+                    <p>Algo mas</p>                
+                </div>
+                
+                <div class="three column text-center mobile-two">            	
+                    <div class="shape">
+                        <div class="overlay hexagon"></div>
+                        <div class="teaser">                                                
+                            <div class="teaser-preview-box">
+                                    
+                                <div class="lightbox-item"> 
+                                    <img src="Images/portfolio_thumb/p3.jpg" alt="" />
+                                    <div class="lightbox-item-overlay-content"> 
+                                        <h6>Project Title</h6>
+                                        <hr/>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>		
+                                        <a class="preview fancybox" href="Images/portfolio_big/p3.jpg" data-fancybox-group="gallery" title="Some of project description here"><i class="icon-search"></i></a>
+                                        <a class="permalink" href="portfolio-single.html"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>  
+                                    
+                            </div>
+                        </div>
+                    </div> 
+                    <h5 class="smallmargin-bottom">Project Title</h5>
+                    <p>Some description here or anything</p>               
+                </div>
+                
+                <div class="three column text-center mobile-two">            	
+                    <div class="shape">
+                        <div class="overlay hexagon"></div>
+                        <div class="teaser">                                                
+                            <div class="teaser-preview-box">
+                                    
+                                <div class="lightbox-item"> 
+                                    <img src="Images/portfolio_thumb/p4.jpg" alt="" />
+                                    <div class="lightbox-item-overlay-content"> 
+                                        <h6>Project Title</h6>
+                                        <hr/>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt</p>		
+                                        <a class="preview fancybox" href="Images/portfolio_big/p4.jpg" data-fancybox-group="gallery" title="Some of project description here"><i class="icon-search"></i></a>
+                                        <a class="permalink" href="portfolio-single.html"><i class="icon-link"></i></a>
+                                    </div>
+                                </div>  
+                                    
+                            </div>
+                        </div>
+                    </div>
+                    <h5 class="smallmargin-bottom">Project Title</h5>
+                    <p>Some description here or anything</p>                
+                </div>
+            </div> -->  
+
+        </section>
+        <!-- content section end here -->
+
+        <!-- bottom content start here -->
+        <section id="bottom-content">
+
+            <div class="row">
+                <div class="twelve column text-center">
+                    <h3>¿Qué está pasando en Daitum?</h3>
+
+                    <ul class="block-grid-nomargin four-up">
+                        <li class="bottom-fact with-border">
+                            <ul class="icon-fact">
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-brush"></i></li>
+                                <li><i class="icon-plus"></i></li>
+                            </ul>
+                            <h1>+1,000</h1>
+                            <p>Diseños</p>
+                        </li>
+
+                        <li class="bottom-fact with-border">
+                            <ul class="icon-fact">
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-darthvader"></i></li>
+                                <li><i class="icon-controllerps"></i></li>
+                                <li><i class="icon-plus"></i></li>
+                            </ul>
+                            <h1>+10,000</h1>
+                            <p>Risas y Diversión</p>
+                        </li>
+
+                        <li class="bottom-fact with-border">
+                            <ul class="icon-fact">
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-debug"></i></li>
+                                <li><i class="icon-plus"></i></li>
+                            </ul>
+                            <h1>+1,000,000</h1>
+                            <p>Lineas de Código</p>
+                        </li>
+
+                        <li class="bottom-fact">
+                            <ul class="icon-fact">
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-coffee"></i></li>
+                                <li><i class="icon-plus"></i></li>
+                            </ul>
+                            <h1>+4,000</h1>
+                            <p>Cafés y desveladas</p>
+                        </li>
+                    </ul>
+
+                    <p>Queremos ser parte Ti - <a href="Equipo.html" class="raquo">Conoce más acerca de nuestro equipo <i class="icon-chevron-right"></i></a></p>
+
+                </div>         
+            </div>
+
+        </section>
+        <!-- bottom content end here -->
+
+        <!-- footer start here -->
+        <footer>   
+            <div class="row">
+                <div class="nine column">
+                    <h6>Información de <a href="Contacto.html">Contacto</a></h6>
+                    <!--<div class="say-hello">
+                        <h4><a href="Contacto.html">¡Hola!</a></h4>
+                    </div>-->
+                    <ul class="footer-address no-bullet">
+                        <li class="address">Rincón del Sur 15 Edificio 15 Int. 9, Bosque Residencial del Sur, Xochimilco, CDMX.</li>
+                        <li class="phone">(55) 7595 5316</li>
+                        <li class="email"><a href="mailto:contacto@daitum.com.mx">contacto@daitum.com.mx</a></li>
+                    </ul>
+
+                    <ul class="footer-link no-bullet">
+                        <li><a href="Avisopriv.html">Aviso Privacidad</a></li>
+                        <li><a href="Avisoleg.html">Aviso Legal</a></li>
+                        <li><a href="Terminos.html">Términos de Servicio</a></li>
+                        <li><a href="Faqs.html">FAQs</a></li>
+                        <li><a href="Sitemap.html">Site Map</a></li>
+                    </ul>		
+                </div>
+
+                <div class="three column">
+                    <img src="Images/logo.png" alt="Daitum" class="footer-logo retina" />
+                    <p>Logos y Nombres registrados por marca Daitum.</p>
+                    <p>&copy; 2014-2017 by Daitum. All Rights Reserved.</p>
+                    <a href="#" onclick="javascript:window.open('https://www.paypal.com/mx/cgi-bin/webscr?cmd=xpt/Marketing/general/WIPaypal-outside', 'WIPaypal', 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=700, height=600');">
+                        <img style="width: 125px; height: 25px;" src="https://www.paypal.com/es_XC/Marketing/i/banner/securepayment_by_pp_1line.png" border="0" alt="Aceptamos PayPal">
+                    </a>
+                </div>       
+            </div>
+        </footer>
+        <!-- footer end here -->
+
+        <script>$('#noscript').remove();</script>
     </body>
 </html>
