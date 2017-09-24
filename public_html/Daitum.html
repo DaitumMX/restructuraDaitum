@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<!--
+
+Daitum.html        07/04/2014
+
+Ultima Actualización: 29/09/2015
+
+ * Copyright (c) 2017 Daitum Web Solution
+ * 
+ * http://www.daitum.com.mx/
+ * soporte@daitum.com.mx
+ * contacto@daitum.com.mx
+ *
+ * Este software es confidencial y de uso exclusivo de:
+ * Daitum Web Solutions - http://www.daitum.com.mx/
+
+@author DvdFortoul
+
+-->
+
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="es"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Acerca de Nosotros | Daitum</title>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="daitum-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="daitum-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Stylesheets Files       // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/media.css"/>
+        <link rel="stylesheet" href="CSS/revolution.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/media-slideshow.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/noscript.css" media="screen,all" id="noscript"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Google Webfont Files     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //        Favicon Files         // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="shortcut icon" href="Imagens/favicon.ico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Javascript Files        // -->
+        <!-- ////////////////////////////////// -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="JS/jquery.easing-1.3.min.js"></script>
+        <script src="JS/modernizr.js"></script>
+        <script src="JS/superfish.js"></script>
+        <script src="JS/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="JS/jquery.themepunch.plugins.min.js"></script>
+        <script src="JS/jquery.themepunch.revolution.min.js"></script>
+        <script src="JS/mediaelement-and-player.min.js"></script>
+        <script src="JS/jquery.fancybox.js?v=2.0.6"></script>
+        <script src="JS/jquery.fancybox-media.js?v=1.0.3"></script>
+        <script src="JS/jquery.donutchart.js"></script>
+        <script src="JS/jflickrfeed.min.js"></script>
+        <script src="JS/jquery.twitter.js"></script>
+        <script src="JS/accordion-functions.js" ></script>
+        <script src="JS/theme-functions.js"></script>
+        <script src="JS/jquery.retina.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-66079829-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                //Retina Image
+                $('img.retina').retina('@2x');
+
+                //Slideshow
+                $('.banner2').revolution({
+                    delay: 9000,
+                    startwidth: 1040,
+                    startheight: 412,
+                    onHoverStop: "off", // Stop Banner Timet at Hover on Slide on/off
+
+                    thumbWidth: 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                    thumbHeight: 50,
+                    thumbAmount: 3,
+                    hideThumbs: 0,
+                    navigationType: "bullet", // bullet, thumb, none
+                    navigationArrows: "none", // nexttobullets, solo (old name verticalcentered), none
+
+                    navigationStyle: "round-old", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+                    navigationHAlign: "center", // Vertical Align top,center,bottom
+                    navigationVAlign: "bottom", // Horizontal Align left,center,right
+                    navigationHOffset: -419,
+                    navigationVOffset: 21,
+                    touchenabled: "on", // Enable Swipe Function : on/off
+
+                    stopAtSlide: -1, // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                    stopAfterLoops: -1, // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+                    hideCaptionAtLimit: 0, // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                    hideAllCaptionAtLilmit: 0, // Hide all The Captions if Width of Browser is less then this value
+                    hideSliderAtLimit: 0, // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+                    fullWidth: "on",
+                    shadow: 0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+                })
+
+            });
+        </script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    </head>
+    <body>
+        <!-- header start here -->
+        <header>
+
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img src="Imagens/logo.png" alt="Daitum" class="retina"/>
+                            </a>
+                        </div>           
+                        <!-- logo end here -->
+
+                        <div id="top-socials">
+                            <ul>                                
+                                <li class="facebook-color">
+                                    <a href="https://www.facebook.com/daitum.websolutions" target="_blank">
+                                        <i class="social-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter-color" >
+                                    <a href="https://twitter.com/DaitumWS" target="_blank">
+                                        <i class="social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="googleplus-color">
+                                    <a href="https://plus.google.com/u/0/113460768975189169658/about" target="_blank">
+                                        <i class="social-googleplus"></i>
+                                    </a>
+                                </li>
+                                <li class="linkedin-color" >
+                                    <a href="#" target="_blank">
+                                        <i class="social-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->        
+
+            <div id="mainmenu-wrapper">
+                <div class="left-menu">
+
+                    <!-- navigation start here -->
+                    <nav id="mainmenu">
+                        <ul id="menu">
+                            <li class="dropdown">
+                                <a href="index.html">Inicio</a>
+                                <span class="desc-menu">Daitum WS</span>
+                            </li>                                                   
+                            <li class="dropdown selected">
+                                <a href="Daitum.html">Daitum</a>
+                                <span class="desc-menu">¿Quiénes Somos?</span>
+                                <ul> 
+                                    <li>
+                                        <a href="Proyectos.html">Proyectos</a>
+                                    </li>
+                                    <li>
+                                        <a href="Equipo.html">Nuestro Equipo</a>
+                                    </li>
+                                    <li>
+                                        <a href="Clientes.html">Nuestros Clientes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Galeria.html">Galería</a>
+                                <span class="desc-menu">Resultados</span>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="Servicios.html">Servicios</a>
+                                <span class="desc-menu">¿Qué Ofrecemos?</span>
+                                <ul>
+                                    <li>
+                                        <a href="DisWeb.html">Diseño Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Plantillas.html">Plantillas</a>
+                                            </li>
+                                            <li>
+                                                <a href="Dmedida.html">Diseño a la Medida</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="DevWeb.html">Desarrollo Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Admincont.html">Administradores de Contenido</a>
+                                            </li>
+                                            <li>
+                                                <a href="Appmedida.html">Aplicaciones Web a la Medida</a>
+                                            </li>
+                                            <li>
+                                                <a href="Aplicaciones.html">Nuestras Aplicaciones Web</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Consultoria.html">Consultoría</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Middleware.html">Middleware</a>
+                                            </li>
+                                            <li>
+                                                <a href="Software.html">Desarrollo</a>
+                                            </li>
+                                            <li>
+                                                <a href="Plataforma.html">Plataforma</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Soporte.html">Soporte y Mantenimiento</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Paquetes.html">Paquetes</a>
+                                <span class="desc-menu">Costos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Promociones.html">Promociones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Contacto.html">Contacto</a>
+                                <span class="desc-menu">Contactanos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Rsociales.html">Redes Sociales</a>
+                                    </li>
+                                    <li>
+                                        <a href="Testimonios.html">Testimonios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Comentarios.html">Comentarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Faqs.html">Preguntas Frecuentes (FAQs)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Login</a>
+                                <span class="desc-menu">Iniciar Sesión</span>
+                                <ul>
+                                    <li>
+                                        <a href="http://clientes.daitum.com.mx/">Panel de Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Empleados</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation end here --> 
+
+                </div>
+
+                <div class="right-menu" id="top-search">
+                    <a class="trigger" href="#"><i class="icon-search"></i></a>
+                    <div class="search-panel">
+                        <ul>
+                            <li>
+                                <form id="search" action="http://www.google.com/cse" method="get" target="_blank">
+                                    <fieldset class="search-fieldset">
+                                        <input type="hidden" name="cx" value="009928480916599957275:fdbqc9ch8m4" />
+                                        <input type="text" name="q" id="search-form" value="escribe y pulsa enter" onblur="if (this.value == '') {
+                                                    this.value = 'escribe y pulsa enter';
+                                                }" onfocus="if (this.value == 'escribe y pulsa enter') {
+                                                            this.value = '';
+                                                        }" />
+                                        <!--<!--<input type="hidden" name="q" value="site:www.daitum.com.mx" />-->-->
+                                    </fieldset>      						
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end here -->
+
+        <!-- slideshow start here -->
+        <section id="slideshow-container2">
+            <div class="banner2">            
+
+                <ul>      
+                    <!-- slide 1 -->
+                    <li data-transition="premium-random">
+                        <img src="Imagens/slideshow/sld_imgbh1.jpg" alt="">                    
+                        <div class="caption general_caption pst_media6 lfl"  data-x="58" data-y="100" data-speed="2200" data-endspeed="900" data-start="400" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><h2 class="bold border3">Servicios Daitum</h2></div>
+                        <div class="caption general_caption lfl"  data-x="58" data-y="165" data-speed="2200" data-endspeed="900" data-start="800" data-end="8100" data-easing="easeOutExpo" data-endeasing="easeInBack"><p>En Daitum nuestra principal meta es brindar<br/>el mejor servicio a nuestros clientes, porque dar solución a sus<br/>necesidades es nuestra mayor satisfacción.</p></div>
+                        <div class="caption pst_media7 lfl" data-x="58" data-y="257" data-speed="2000" data-start="1400" data-end="8000" data-easing="easeOutExpo"><a class="button small green">leer más</a></div>
+                        <div class="caption pst_media8 lfl" data-x="175" data-y="257" data-speed="2000" data-start="1000" data-end="8000" data-easing="easeOutExpo"><a class="button small white">ejemplos</a></div>  
+                    </li>
+
+                    <!-- slide 2 -->
+                    <li data-transition="premium-random">
+                        <img src="Imagens/slideshow/sld_imgbh3.jpg" alt="">                    
+                        <div class="caption general_caption pst_media6 lfl"  data-x="58" data-y="100" data-speed="2200" data-endspeed="900" data-start="400" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><h2 class="bold border3">Soluciones Daitum</h2></div>
+                        <div class="caption general_caption lfl"  data-x="58" data-y="165" data-speed="2200" data-endspeed="900" data-start="800" data-end="8100" data-easing="easeOutExpo" data-endeasing="easeInBack"><p>En Daitum estamos comprometidos a ofrecer soluciones que<br/>satisfagan las demandas o necesidades de nuestros clientes<br/>mediante el aprovechamiento de Tecnología de Vanguardia.</p></div>
+                        <div class="caption pst_media7 lfl" data-x="58" data-y="257" data-speed="2000" data-start="1400" data-end="8000" data-easing="easeOutExpo"><a class="button small green">leer más</a></div>
+                        <div class="caption pst_media8 lfl" data-x="175" data-y="257" data-speed="2000" data-start="1000" data-end="8000" data-easing="easeOutExpo"><a class="button small white">ejemplos</a></div>  
+                    </li>
+
+                    <!-- slide 3 -->
+                    <li data-transition="premium-random">
+                        <img src="Imagens/slideshow/sld_imgbh5.jpg" alt="">                    
+                        <div class="caption general_caption pst_media6 lfl"  data-x="58" data-y="100" data-speed="2200" data-endspeed="900" data-start="400" data-end="7900" data-easing="easeOutExpo" data-endeasing="easeInBack"><h2 class="bold border3">Mejora Daitum</h2></div>
+                        <div class="caption general_caption lfl"  data-x="58" data-y="165" data-speed="2200" data-endspeed="900" data-start="800" data-end="8100" data-easing="easeOutExpo" data-endeasing="easeInBack"><p>En Daitum nos preocupamos por la calidad de nuestros productos,<br/>por lo cual mantenemos una mejora continua en nuestros<br/>conocimientos de la Tecnología, Procesos y Servicios.</p></div>
+                        <div class="caption pst_media7 lfl" data-x="58" data-y="257" data-speed="2000" data-start="1400" data-end="8000" data-easing="easeOutExpo"><a class="button small green">leer más</a></div>
+                        <div class="caption pst_media8 lfl" data-x="175" data-y="257" data-speed="2000" data-start="1000" data-end="8000" data-easing="easeOutExpo"><a class="button small white">ejemplos</a></div>  
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-top"></div>
+
+            </div>        
+        </section>
+        <!-- slideshow end here -->
+
+        <!-- content section start here -->
+        <section class="content-wrapper">    	
+            <div class="row special-heading">
+                <div class="twelve column text-center">
+                    <h2 class="bold2 smallmargin-bottom">¡Bienvenido! Somos <span class="highlight">Daitum</span> una empresa comprometida con nuestro trabajo</h2>
+                    <p class="lead">En <strong>Daitum</strong> lo más importante eres Tú, estamos para transmitir tus ideas y valores</p>
+                    <hr class="margin-top2"/>
+                </div>            
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-tie-business"></i>
+                    </div>
+                    <h3 class="hh33">Nuestra Visión</h3>
+                    <p class="text-overflow" align="justify">Queremos ser una Empresa que sea un referente de los servicios Web, desempeñando nuestra labor de una forma ética, innovadora y satisfactoria para que nuestros clientes se beneficien de la Tecnología impulsando el éxito de sus Negocios en Internet. </p>
+                </div>
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-stockup"></i>
+                    </div>
+                    <h3 class="hh33">Nuestra Misión</h3>
+                    <p class="text-overflow" align="justify">Ofrecer soluciones de Desarrollo Web a Negocios que ya se encuentren o deseen incursionar en el mundo del Internet, a través de un servicio de calidad, a la medida de las necesidades y con el uso de las Tecnologías más actuales brindando a nuestros clientes aplicaciones funcionales e innovadoras con el espíritu de servicio que caracteriza a nuestro equipo de trabajo.</p>
+                </div>
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-calcplus"></i>
+                    </div>
+                    <h3 class="hh33">Nuestros Valores</h3>
+                    <p class="text-overflow" align="justify">La Honestidad, Respeto, Responsabilidad, Compromiso, Calidad, Lealtad; son algunos de los valores que nos caracterizan en nuestro trabajo y trato con nuestros clientes. </p>
+                </div>
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-settingstwo-gearalt"></i>
+                    </div>
+                    <h3 class="hh33">Innovación</h3>
+                    <p class="text-overflow" align="justify">En <strong>Daitum</strong> estamos comprometidos a ofrecer soluciones mediante la implementación y desarrollo de Tecnología de Vanguardia.</p>
+                </div>
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-brain"></i>
+                    </div>
+                    <h3 class="hh33">Conocimiento</h3>
+                    <p class="text-overflow" align="justify">En <strong>Daitum</strong> garantizamos el buen uso de la Tecnolgía gracias a la capacidad y el conocimiento de nuestro equipo, promoviendo la investigación y la práctica, no solo de los hechos e información de nuestra rama laboral, sino de nuestro entorno.</p>
+                </div>
+
+                <div class="six column animated-column no-bg mobile-two">
+                    <div class="circle-border small icon-left bg-grey">
+                        <i class="icon-barchartalt"></i>
+                    </div>
+                    <h3 class="hh33">Experiencia</h3>
+                    <p class="text-overflow" align="justify">En <strong>Daitum</strong> garantizamos nuestros resultados debido a la habilidad y conocimiento adquirido de manera procedimental, promoviendo la observación y participación colectiva de nuestro equipo, aplicada en nuestro trabajo.</p>
+                </div>
+            </div>                           
+        </section>
+        <!-- content section end here -->
+
+        <!-- featured column section start here -->
+        <section class="featured-column">
+            <div class="row">
+                <div class="five column mobile-two">
+                    <img src="Imagens/Tablet3.png" alt="" class="img-left" />               
+                </div>
+                <div class="seven column mobile-two">
+                    <h2>Razones para elegir <strong>Daitum</strong></h2>
+                    <p align="justify">¿Por qué elegir <strong>Daitum</strong>?<br>En <strong>Daitum</strong> hay muchos motivos por los cuales nuestro servicio es simplemente la mejor opción de Diseño y Desarrollo de Aplicaciones Web especializadas para tu Negocio. En <strong>Daitum</strong> cada motivo es un elemento substancial de nuestra filosofía empresarial.</p>
+                    <ul class="check content-hide">
+                        <li>La satisfacción del cliente es lo primero en <strong>Daitum</strong>, por eso nos esmeramos cada día para ser aún mejores.</li>
+                        <li>Simplicidad para el cliente, sólo tiene que comunicarnos sus deseos, nosotros nos encargamos del resto. </li>
+                        <li>El entusiasmo y experiencia nos ayudan a dar la mejor solución.</li>
+                    </ul>
+                    <a href="Razones.html" class="button medium green2">Más ...</a>                
+                </div>
+            </div>
+        </section>
+        <!-- featured column section end here -->
+
+        <!-- content section start here -->
+        <section class="content-wrapper"> 
+            <div class="row smallmargin-top2">
+                <div class="eight column">
+                    <h3 class="hh33">¿Tienes dudas? Por favor contáctanos.</h3>
+                    <p class="lead">Estamos para servirte, haznos llegar tus dudas, comentarios o sugerencias, y en breve tendras una respuesta de nuestro equipo.</p>
+                </div>
+                <div class="four column animated-column no-bg smallmargin-top mobile-two">
+                    <a href="Docs/CartaPresentacion.pdf" target="_blank">
+                        <div class="note-folded special-note">
+                            <div class="circle-border small icon-left special-position">
+                                <i class="icon-download-alt"></i>
+                            </div>
+                            <p class="text-overflow lead">Carta Presentación Daitum</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- content section end here -->
+
+        <!-- footer start here -->
+        <footer>   
+            <div class="row">
+                <div class="nine column">
+                    <h6>Información de <a href="Contacto.html">Contacto</a></h6>
+                    <!--<div class="say-hello">
+                        <h4><a href="Contacto.html">¡Hola!</a></h4>
+                    </div>-->
+                    <ul class="footer-address no-bullet">
+                        <li class="address">Rincón del Sur 15 Edificio 15 Int. 9, Bosque Residencial del Sur, Xochimilco, CDMX.</li>
+                        <li class="phone">(55) 7595 5316</li>
+                        <li class="email"><a href="mailto:contacto@daitum.com.mx">contacto@daitum.com.mx</a></li>
+                    </ul>
+
+                    <ul class="footer-link no-bullet">
+                        <li><a href="Avisopriv.html">Aviso Privacidad</a></li>
+                        <li><a href="Avisoleg.html">Aviso Legal</a></li>
+                        <li><a href="Terminos.html">Términos de Servicio</a></li>
+                        <li><a href="Faqs.html">FAQs</a></li>
+                        <li><a href="Sitemap.html">Site Map</a></li>
+                    </ul>		
+                </div>
+
+                <div class="three column">
+                    <img src="Imagens/logo.png" alt="Daitum" class="footer-logo retina" />
+                    <p>Logos y Nombres registrados por marca Daitum.</p>
+                    <p>&copy; 2014-2105 by Daitum. All Rights Reserved. </p>	
+                </div>       
+            </div>
+        </footer>
+        <!-- footer end here -->
+
+        <script>$('#noscript').remove();</script>
+    </body>
+</html>

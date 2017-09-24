@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<!--
+
+Clientes.html        08/04/2014
+
+Ultima Actualización: 20/08/2016
+
+ * Copyright (c) 2017 Daitum Web Solution
+ * 
+ * http://www.daitum.com.mx/
+ * soporte@daitum.com.mx
+ * contacto@daitum.com.mx
+ *
+ * Este software es confidencial y de uso exclusivo de:
+ * Daitum Web Solutions - http://www.daitum.com.mx/
+
+@author DvdFortoul
+
+-->
+
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Nuestros Clientes | Daitum</title>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Stylesheets Files       // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/media.css"/>
+        <link rel="stylesheet" href="CSS/revolution.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/media-slideshow.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/noscript.css" media="screen,all" id="noscript"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Google Webfont Files     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //        Favicon Files         // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="shortcut icon" href="Imagens/favicon.ico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Javascript Files        // -->
+        <!-- ////////////////////////////////// -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="JS/jquery.easing-1.3.min.js"></script>
+        <script src="JS/modernizr.js"></script>
+        <script src="JS/superfish.js"></script>
+        <script src="JS/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="JS/jquery.themepunch.plugins.min.js"></script>
+        <script src="JS/jquery.themepunch.revolution.min.js"></script>
+        <script src="JS/mediaelement-and-player.min.js"></script>
+        <script src="JS/jquery.fancybox.js?v=2.0.6"></script>
+        <script src="JS/jquery.fancybox-media.js?v=1.0.3"></script>
+        <script src="JS/jquery.donutchart.js"></script>
+        <script src="JS/jflickrfeed.min.js"></script>
+        <script src="JS/jquery.twitter.js"></script>
+        <script src="JS/accordion-functions.js" ></script>
+        <script src="JS/theme-functions.js"></script>
+        <script src="JS/jquery.retina.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-66079829-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                //Retina Image
+                $('img.retina').retina('@2x');
+
+                //Slideshow
+                $('.banner2').revolution({
+                    delay: 12000,
+                    startwidth: 1040,
+                    startheight: 412,
+                    onHoverStop: "off", // Stop Banner Timet at Hover on Slide on/off
+
+                    thumbWidth: 100, // Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                    thumbHeight: 50,
+                    thumbAmount: 3,
+                    hideThumbs: 0,
+                    navigationType: "bullet", // bullet, thumb, none
+                    navigationArrows: "none", // nexttobullets, solo (old name verticalcentered), none
+
+                    navigationStyle: "round-old", // round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+                    navigationHAlign: "center", // Vertical Align top,center,bottom
+                    navigationVAlign: "bottom", // Horizontal Align left,center,right
+                    navigationHOffset: -419,
+                    navigationVOffset: 21,
+                    touchenabled: "on", // Enable Swipe Function : on/off
+
+                    stopAtSlide: -1, // Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                    stopAfterLoops: -1, // Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+                    hideCaptionAtLimit: 0, // It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                    hideAllCaptionAtLilmit: 0, // Hide all The Captions if Width of Browser is less then this value
+                    hideSliderAtLimit: 0, // Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+                    fullWidth: "on",
+                    shadow: 0								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+                })
+
+            });
+        </script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    </head>
+    <body>
+        <!-- header start here -->
+        <header>
+
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html"><img src="Imagens/logo.png" alt="Daitum" class="retina"/></a>
+                        </div>           
+                        <!-- logo end here -->
+
+                        <div id="top-socials">
+                            <ul>                                
+                                <li class="facebook-color">
+                                    <a href="https://www.facebook.com/daitum.websolutions" target="_blank">
+                                        <i class="social-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter-color" >
+                                    <a href="https://twitter.com/DaitumWS" target="_blank">
+                                        <i class="social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="googleplus-color">
+                                    <a href="https://plus.google.com/u/0/113460768975189169658/about" target="_blank">
+                                        <i class="social-googleplus"></i>
+                                    </a>
+                                </li>
+                                <li class="linkedin-color" >
+                                    <a href="#" target="_blank">
+                                        <i class="social-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->        
+
+            <div id="mainmenu-wrapper">
+                <div class="left-menu">
+
+                    <!-- navigation start here -->
+                    <nav id="mainmenu">
+                        <ul id="menu">
+                            <li class="dropdown">
+                                <a href="index.html">Inicio</a>
+                                <span class="desc-menu">Daitum WS</span>
+                            </li>                                                   
+                            <li class="dropdown selected">
+                                <a href="Daitum.html">Daitum</a>
+                                <span class="desc-menu">¿Quiénes Somos?</span>
+                                <ul> 
+                                    <li>
+                                        <a href="Proyectos.html">Proyectos</a>
+                                    </li>
+                                    <li>
+                                        <a href="Equipo.html">Nuestro Equipo</a>
+                                    </li>
+                                    <li>
+                                        <a href="Clientes.html">Nuestros Clientes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Galeria.html">Galería</a>
+                                <span class="desc-menu">Resultados</span>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="Servicios.html">Servicios</a>
+                                <span class="desc-menu">¿Qué Ofrecemos?</span>
+                                <ul>
+                                    <li>
+                                        <a href="DisWeb.html">Diseño Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Plantillas.html">Plantillas</a>
+                                            </li>
+                                            <li>
+                                                <a href="Dmedida.html">Diseño a la Medida</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="DevWeb.html">Desarrollo Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Admincont.html">Administradores de Contenido</a>
+                                            </li>
+                                            <li>
+                                                <a href="Appmedida.html">Aplicaciones Web a la Medida</a>
+                                            </li>
+                                            <li>
+                                                <a href="Aplicaciones.html">Nuestras Aplicaciones Web</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Consultoria.html">Consultoría</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Middleware.html">Middleware</a>
+                                            </li>
+                                            <li>
+                                                <a href="Software.html">Desarrollo</a>
+                                            </li>
+                                            <li>
+                                                <a href="Plataforma.html">Plataforma</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Soporte.html">Soporte y Mantenimiento</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Paquetes.html">Paquetes</a>
+                                <span class="desc-menu">Costos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Promociones.html">Promociones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Contacto.html">Contacto</a>
+                                <span class="desc-menu">Contactanos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Rsociales.html">Redes Sociales</a>
+                                    </li>
+                                    <li>
+                                        <a href="Testimonios.html">Testimonios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Comentarios.html">Comentarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Faqs.html">Preguntas Frecuentes (FAQs)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Login</a>
+                                <span class="desc-menu">Iniciar Sesión</span>
+                                <ul>
+                                    <li>
+                                        <a href="http://clientes.daitum.com.mx/">Panel de Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Empleados</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation end here --> 
+
+                </div>
+
+                <div class="right-menu" id="top-search">
+                    <a class="trigger" href="#">
+                        <i class="icon-search"></i>
+                    </a>
+                    <div class="search-panel">
+                        <ul>
+                            <li>
+                                <form id="search" action="http://www.google.com/cse" method="get" target="_blank">
+                                    <fieldset class="search-fieldset">
+                                        <input type="hidden" name="cx" value="009928480916599957275:fdbqc9ch8m4" />
+                                        <input type="text" name="q" id="search-form" value="escribe y pulsa enter" onblur="if (this.value == '') {
+                                                    this.value = 'escribe y pulsa enter';
+                                                }" onfocus="if (this.value == 'escribe y pulsa enter') {
+                                                            this.value = '';
+                                                        }" />
+                                        <!--<!--<input type="hidden" name="q" value="site:www.daitum.com.mx" />-->-->
+                                    </fieldset>      						
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end here -->
+
+        <!-- slideshow start here -->
+        <section id="slideshow-container2">
+            <div class="banner2">            
+
+                <ul>      
+                    <!-- slide 1 -->
+                    <li data-transition="3dcurtain-horizontal">
+                        <img src="Imagens/slideshow/sld_imgbh6.jpg" alt="">    
+                        <!--<div class="caption general_caption lfb" data-x="50" data-y="28" data-speed="3000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Imagens/slideshow/sld_people1.png" alt=""></div>-->
+                        <div class="caption general_caption pst_media16 lft"  data-x="466" data-y="100" data-speed="900" data-endspeed="900" data-start="600" data-end="7100" data-easing="easeOutBack" data-endeasing="easeInBack"><h1 class="bold grey-text">Relájate</h1></div>
+                        <div class="caption general_caption fade"  data-x="466" data-y="172" data-speed="900" data-endspeed="900" data-start="100" data-end="7800" data-easing="easeOutBack" data-endeasing="easeInBack"><p class="lead blanco-text">Compártenos todas tus ideas...<br/>...¡Nosotros nos encargamos de todo lo demás!</p></div>
+
+                        <div class="caption general_caption pst_media15 lfb"  data-x="466" data-y="234" data-speed="900" data-endspeed="900" data-start="100" data-end="6800" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-share-alt"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media9 lfb"  data-x="546" data-y="234" data-speed="900" data-endspeed="900" data-start="600" data-end="7100" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-thinking"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media10 lfb"  data-x="626" data-y="234" data-speed="900" data-endspeed="900" data-start="800" data-end="7600" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-laptop"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media11 lfb"  data-x="706" data-y="234" data-speed="900" data-endspeed="900" data-start="1200" data-end="7800" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-domain"></i></div>
+                        </div>
+                    </li>
+
+                    <!-- slide 2 -->
+                    <li data-transition="3dcurtain-horizontal">
+                        <img src="Imagens/slideshow/sld_imgbh7.jpg" alt="">    
+                        <div class="caption general_caption lfb"  data-x="86" data-y="74" data-speed="4000" data-endspeed="1000" data-start="100" data-end="8200" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-red"><i class="icon-student-school"></i></div>
+                        </div>
+                        <div class="caption general_caption lfb"  data-x="246" data-y="124" data-speed="4000" data-endspeed="1000" data-start="200" data-end="8100" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-blue"><i class="icon-workshirt"></i></div>
+                        </div>
+                        <div class="caption general_caption lfb"  data-x="366" data-y="30" data-speed="4000" data-endspeed="1000" data-start="300" data-end="7900" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-html"></i></div>
+                        </div>
+                        <div class="caption general_caption lfb"  data-x="576" data-y="84" data-speed="4000" data-endspeed="1000" data-start="600" data-end="7900" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-orange"><i class="icon-stocks"></i></div>
+                        </div>                    
+                        <div class="caption general_caption lfb"  data-x="740" data-y="44" data-speed="4000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-red"><i class="icon-webpage"></i></div>
+                        </div>
+                        <div class="caption general_caption lfb"  data-x="878" data-y="144" data-speed="4000" data-endspeed="1000" data-start="400" data-end="7800" data-easing="easeOutElastic" data-endeasing="easeInExpo">
+                            <div class="circle-border small icon-left bg-grey"><i class="icon-barchartalt"></i></div>
+                        </div>
+
+                        <!--<div class="caption general_caption lfb" data-x="100" data-y="28" data-speed="3000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Imagens/slideshow/sld_people2.png" alt=""></div>-->
+                        <div class="caption general_caption pst_media17 lfb"  data-x="180" data-y="280" data-speed="900" data-endspeed="1600" data-start="600" data-end="7200" data-easing="easeOutBack" data-endeasing="easeInBack"><h1 class="bold border3">Servicio Profesional &amp; Grandes Soluciones</h1></div>                      
+                    </li>
+
+                    <!-- slide 3 -->
+                    <li data-transition="3dcurtain-horizontal">
+                        <img src="Imagens/slideshow/sld_imgbh8.jpg" alt="">    
+                        <!--<div class="caption general_caption lfb" data-x="540" data-y="28" data-speed="3000" data-endspeed="1000" data-start="700" data-end="8000" data-easing="easeOutExpo" data-endeasing="easeInExpo"><img src="Imagens/slideshow/sld_people3.png" alt=""></div>-->
+                        <div class="caption general_caption pst_media18 lft"  data-x="90" data-y="100" data-speed="900" data-endspeed="900" data-start="600" data-end="7100" data-easing="easeOutBack" data-endeasing="easeInBack"><h1 class="bold dark-text">Llamativo &AMP; Elegante</h1></div>
+                        <div class="caption general_caption fade"  data-x="90" data-y="172" data-speed="900" data-endspeed="900" data-start="100" data-end="7800" data-easing="easeOutBack" data-endeasing="easeInBack"><p class="lead dark-text">Déjate consentir por profesionales, da un nuevo toque a tu negocio<br/>muéstrale al mundo un aspecto atractivo y lujoso.</p></div>
+
+                        <div class="caption general_caption pst_media15 lfb"  data-x="90" data-y="234" data-speed="900" data-endspeed="900" data-start="100" data-end="6800" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-shoppingbag"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media9 lfb"  data-x="170" data-y="234" data-speed="900" data-endspeed="900" data-start="600" data-end="7100" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-stocks"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media10 lfb"  data-x="250" data-y="234" data-speed="900" data-endspeed="900" data-start="800" data-end="7600" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-desklamp"></i></div>
+                        </div>
+                        <div class="caption general_caption pst_media11 lfb"  data-x="330" data-y="234" data-speed="900" data-endspeed="900" data-start="1200" data-end="7800" data-easing="easeOutBack" data-endeasing="easeInBack">
+                            <div class="circle-border small icon-left bg-green"><i class="icon-tie-business"></i></div>
+                        </div>  
+                    </li>
+                </ul>
+                <div class="tp-bannertimer tp-top"></div>
+
+            </div>        
+        </section>
+        <!-- slideshow end here -->
+
+        <!-- content section start here -->
+        <section class="content-wrapper">    	
+            <div class="row">                
+                <div class="three column mobile-two">
+                    <div class="note-folded text-center">
+                        <div class="no-border small">
+                            <i class="icon-factory"></i>
+                        </div>
+                        <h6 class="bold">Apreciamos tu Negocio</h6>
+                        <p class="text-overflow pcolor">Resolver tu necesidad es lo más importante, en <strong>Daitum</strong> nos aseguramos que quedes totalmente satisfecho con nuestro trabajo.</p>
+                    </div>
+                </div>
+
+                <div class="three column mobile-two">
+                    <div class="note-folded green text-center">
+                        <div class="no-border small">
+                            <i class="icon-groups-friends"></i>
+                        </div>
+                        <h6 class="bold">Atención Personalizada</h6>
+                        <p class="text-overflow pcolor">El mejor trato para ti, percibirás el desempeño de <strong>Daitum</strong> y sentirás el plus que nos caracteriza.</p>
+                    </div>
+                </div>
+
+                <div class="three column mobile-two">
+                    <div class="note-folded blue text-center">
+                        <div class="no-border small">
+                            <i class="icon-puzzle-plugin"></i>
+                        </div>
+                        <h6 class="bold">Soluciones Completas</h6>
+                        <p class="text-overflow pcolor">Nunca te faltará una pieza del rompecabezas, en <strong>Daitum</strong> te entregamos soluciones completas, documentadas y funcionando.</p>
+                    </div>
+                </div>
+
+                <div class="three column mobile-two">
+                    <div class="note-folded orange text-center">
+                        <div class="no-border small">
+                            <i class="icon-commenttyping"></i>
+                        </div>
+                        <h6 class="bold">Libre Comunicación</h6>
+                        <p class="text-overflow pcolor">Siéntete libre de cominicarnos tus necesidades, en <strong>Daitum</strong> somos expertos en ayudar a nuestros clientes a plasmar sus ideas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve column smallmargin-top3">
+                    <h2 class="bold smallmargin-bottom">¿Aún lo estás pensando? No esperes más y contáctanos.</h2>
+                    <p class="lead">Sé uno más de nuestros clientes Complacidos.</p>
+                </div>
+
+                <div class="eight column">
+                    <ul class="tabs-left">
+                        <li><a href="#Actitud">Actitud</a></li>
+                        <li><a href="#Compromiso">Compromiso</a></li>
+                        <li><a href="#Respeto">Respeto</a></li>
+                        <li><a href="#Competencia">Competencia</a></li>
+                        <li><a href="#Transparencia">Transparencia</a></li>
+                    </ul>
+                    <div class="tab_container-left">
+                        <div id="Actitud" class="tab_content-left"> 
+                            <h4 class="title-line"><span>Actitud</span></h4>
+                            <img src="Imagens/Tablet2.png" alt="" class="img-left imghide-mobile"/>                          
+                            <p>Nuestra disposición es estable y contínua con cada uno de nuestros clientes.</p>
+                            <ul class="disc float-left">
+                                <li>Actuamos de forma determinada</li>
+                                <li>Simpre estamos de tu lado</li>
+                                <li>Actitud positiva y la mejor disposición</li>
+                            </ul>
+                            <p class="float-left">"Quien no vive para Servir, jamás servirá para Vivir"</p>                               
+                        </div>
+
+                        <div id="Compromiso" class="tab_content-left">                            
+                            <h4 class="title-line"><span>Compromiso</span></h4>
+                            <img src="Imagens/Tablet2.png" alt="" class="img-left imghide-mobile"/>                          
+                            <p>Nuestra fuerza y crecimiento está basado en la relación duradera con nuestros clientes.</p>
+                            <ul class="disc float-left">
+                                <li>Trabajo en equipo</li>
+                                <li>Compartimos ideas, necesidades y soluciones</li>
+                                <li>Nos adaptamos a nuestros clientes</li>
+                            </ul>
+                            <p class="float-left">"Quien no vive para Servir, jamás servirá para Vivir"</p>                                          
+                        </div>
+
+                        <div id="Respeto" class="tab_content-left">                            
+                            <h4 class="title-line"><span>Respeto</span></h4>
+                            <img src="Imagens/Tablet2.png" alt="" class="img-left imghide-mobile"/>                          
+                            <p>Nuestra cominicación con el cliente es el pilar de nuestras actividades.</p>
+                            <ul class="disc float-left">
+                                <li>Repetamos todos nuestros acuerdos</li>
+                                <li>Atendemos con interés cada solicitud</li>
+                                <li>Atención amable y eficaz </li>
+                            </ul>
+                            <p class="float-left">"Quien no vive para Servir, jamás servirá para Vivir"</p>                                       
+                        </div>
+                        <div id="Competencia" class="tab_content-left">                            
+                            <h4 class="title-line"><span>Competencia</span></h4>
+                            <img src="Imagens/Tablet2.png" alt="" class="img-left imghide-mobile"/>                          
+                            <p>Nuestro primer paso es escuchar y registrar cuidadosamente sus necesidades.</p>
+                            <ul class="disc float-left">
+                                <li>Agilizamos en la mejor medida los trabajos</li>
+                                <li>Retroalimentación con el cliente</li>
+                                <li>Nos ajustamos a su presupuesto</li>
+                            </ul>
+                            <p class="float-left">"Quien no vive para Servir, jamás servirá para Vivir"</p>                                    
+                        </div>
+                        <div id="Transparencia" class="tab_content-left">                            
+                            <h4 class="title-line"><span>Transparencia</span></h4>
+                            <img src="Imagens/Tablet2.png" alt="" class="img-left imghide-mobile"/>                          
+                            <p>Nuestro equipo esta comprometido a proporcionarle de manera detallada una respuesta a sus solicitudes.</p>
+                            <ul class="disc float-left">
+                                <li>Damos toda la información solicitada</li>
+                                <li>Trabajamos honradamente.</li>
+                                <li>Notificamos cualquier trabajo adicional</li>
+                            </ul>
+                            <p class="float-left">"Quien no vive para Servir, jamás servirá para Vivir"</p>                                    
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four column">
+                    <div class="progress-bar" data-percent="100">
+                        <div></div>
+                        <span class="progress-title">Actitud</span>
+                    </div>
+
+                    <div class="progress-bar green" data-percent="100">
+                        <div></div>
+                        <span class="progress-title">Compromiso</span>
+                    </div>
+
+                    <div class="progress-bar blue" data-percent="100">
+                        <div></div>
+                        <span class="progress-title">Respeto</span>
+                    </div>
+
+                    <div class="progress-bar orange" data-percent="90">
+                        <div></div>
+                        <span class="progress-title">Competencia</span>
+                    </div>
+
+                    <div class="progress-bar red" data-percent="100">
+                        <div></div>
+                        <span class="progress-title">Transparencia</span>
+                    </div>
+                </div>
+            </div>                           
+        </section>
+        <!-- content section end here -->
+        <hr>
+        <!-- featured column section start here -->
+        <section class="content-wrapper">
+            <div class="row">
+                <div class="twelve column">
+                    <h3 class="bold margin-bottom2 text-center">Nuestros Clientes</h3>
+                    <div class="list_carousel responsive">
+                        <ul id="client-carousel">
+                            <li><img src="Imagens/CLIENTES/CLIEN1g.png" alt="Javanes Solutions" title="Javanes Solutions" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN7g.png" alt="LosCalderonJR" title="Los Calderon JR" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN2g.png" alt="Negocios Digitales" title="Negocios Digitales" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN3g.png" alt="Secretaría de Economía" title="Secretaría de Economía" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN6g.png" alt="EAEM" title="Universidad Autónoma del Estado de México" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN8g.png" alt="Recontratate" title="Recontratate" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN4g.png" alt="Secretaría de Educación Pública" title="Secretaría de Educación Pública" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN5g.png" alt="Vgati Solutions" title="Vgati Solutions" class="retina"/></li>
+                            <li><img src="Imagens/CLIENTES/CLIEN6g.png" alt="EAEM" title="Universidad Autónoma del Estado de México" class="retina"/></li>
+                        </ul>
+                        <div class="clear"></div>
+                        <a id="prev-carousel" class="prev" href="#">
+                            <i class="icon-chevron-left"></i>
+                        </a>
+                        <a id="next-carousel" class="next" href="#">
+                            <i class="icon-chevron-right"></i>
+                        </a>
+                    </div>               
+                </div>
+            </div>
+
+        </section>
+        <!-- featured column section end here -->
+
+        <hr>
+        <!-- featured column section start here -->
+        <section class="content-wrapper">
+            <div class="row">
+                <div class="twelve column">
+                    <h3 class="bold margin-bottom2 text-center">Avances</h3>
+                    <p class="lead">Si eres uno de nuestros Clientes puedes ver el avance de tu proyecto <a href="http://avance.daitum.com.mx/">Aquí</a>.</p>
+
+                </div>
+            </div>
+
+        </section>
+        <!-- featured column section end here -->
+
+        <!-- content section start here -->
+        <!--Se comento hasta tener comentarios-->
+        <!--
+        <section class="content-wrapper"> 
+            <div class="row">
+                
+                <div class="twelve column smallmargin-bottom smallmargin-top2">
+                    <h3>¿Que dicen nuestros Clientes?</h3>                     
+                </div>                         
+                
+                <div class="four column">
+        <!-- begin of testimonials 1 -->    
+        <!--
+        <div class="testi-container">                        	
+            <div class="testi-text">
+                <blockquote>
+                    <p>He buscado por varias partes y observe diferentes páginas web para decidir cuál usar y la suya es, con diferencia, la mejor. Los diseños son increíbles.</p>
+                </blockquote>                                                         
+            </div>
+            <div class="clear"></div>                                                                      
+        </div>
+        <div class="testi-image">
+            <img src="Imagens/sample_images/team8.jpg" alt="" />                                                                      
+        </div>
+        <div class="testi-name">Joshua Torbert<br/><span class="company-name">Dueño Empresa 1</span></div>	                                  
+    </div>
+                        
+    <div class="four column">
+        <!-- begin of testimonials 2 -->      
+        <!--
+        <div class="testi-container">                        	
+            <div class="testi-text">
+                <blockquote>
+                    <p>En Daitum siempre son útiles si alguna vez tenemos un problema, sin fallas o interrupciones en el servicio. En general, estamos contentos. Sigan con su buen trabajo.</p>
+                </blockquote>                              
+            </div>                        
+            <div class="clear"></div>                                                                     
+        </div>
+        <div class="testi-image">
+            <img src="Imagens/sample_images/team7.jpg" alt="" />                                              
+        </div>                    
+        <div class="testi-name">Perry Douglas<br/><span class="company-name">Gerente Empresa 2</span></div>	 
+    </div>
+    
+    <div class="four column">
+        <!-- begin of testimonials 3 -->   
+        <!--
+        <div class="testi-container">                        	
+            <div class="testi-text">
+                <blockquote>
+                    <p>¡Qué Equipo! La respuesta más rápida que jamás he experimentada. Soy felíz de nuevo. Muchas gracias.</p>
+                </blockquote>                              
+            </div>                        
+            <div class="clear"></div>                                                                     
+        </div>
+        <div class="testi-image">
+            <img src="Imagens/sample_images/team6.jpg" alt="" />                                              
+        </div>                    
+        <div class="testi-name">Deborah Hollins<br/><span class="company-name">Aquitecto Empresa 3</span></div>	 
+    </div>
+        
+</div>
+</section>
+        -->
+        <!-- content section end here -->
+
+        <!-- footer start here -->
+        <footer>   
+            <div class="row">
+                <div class="nine column">
+                    <h6>Información de <a href="Contacto.html">Contacto</a></h6>
+                    <!--<div class="say-hello">
+                        <h4><a href="Contacto.html">¡Hola!</a></h4>
+                    </div>-->
+                    <ul class="footer-address no-bullet">
+                        <li class="address">Rincón del Sur 15 Edificio 15 Int. 9, Bosque Residencial del Sur, Xochimilco, CDMX.</li>
+                        <li class="phone">(55) 7595 5316</li>
+                        <li class="email"><a href="mailto:contacto@daitum.com.mx">contacto@daitum.com.mx</a></li>
+                    </ul>
+
+                    <ul class="footer-link no-bullet">
+                        <li><a href="Avisopriv.html">Aviso Privacidad</a></li>
+                        <li><a href="Avisoleg.html">Aviso Legal</a></li>
+                        <li><a href="Terminos.html">Términos de Servicio</a></li>
+                        <li><a href="Faqs.html">FAQs</a></li>
+                        <li><a href="Sitemap.html">Site Map</a></li>
+                    </ul>		
+                </div>
+
+                <div class="three column">
+                    <img src="Imagens/logo.png" alt="Daitum" class="footer-logo retina" />
+                    <p>Logos y Nombres registrados por marca Daitum.</p>
+                    <p>&copy; 2014-2017 by Daitum. All Rights Reserved.</p>	
+                </div>       
+            </div>
+        </footer>
+        <!-- footer end here -->
+
+        <script>$('#noscript').remove();</script>
+    </body>
+</html>
