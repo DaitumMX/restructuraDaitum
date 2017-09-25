@@ -1993,6 +1993,7 @@ margin-right:25px;
 ul.footer-address li.address:before {font-family:'WebHostingHub-Glyphs'; background:none;width:auto; height:auto; font-style:normal; color:#61758a; content:'\21b8'; font-size:14px; margin-right:6px; position:relative; top:2px;}
 ul.footer-address li.phone:before {font-family:'WebHostingHub-Glyphs'; background:none;width:auto; height:auto; font-style:normal; color:#61758a; content:'\f15b'; font-size:14px; margin-right:6px; position:relative; top:3px;}
 ul.footer-address li.email:before {font-family:'WebHostingHub-Glyphs'; background:none;width:auto; height:auto; font-style:normal; color:#61758a; content:'\f028'; font-size:14px; margin-right:6px; position:relative; top:4px;}
+ul.footer-address li.whats:before {font-family:'WebHostingHub-Glyphs'; background:none;width:auto; height:auto; font-style:normal; color:#61758a; content:'\f77b'; font-size:14px; margin-right:6px; position:relative; top:4px;}
 
 ul.footer-link {
 margin-top:-5px;
