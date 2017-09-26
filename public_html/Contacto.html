@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<!--
+
+Dmemida.html        11/04/2014
+
+Ultima Actualización: 25/09/2017
+
+ * Copyright (c) 2017 Daitum Web Solution
+ * 
+ * http://www.daitum.com.mx/
+ * soporte@daitum.com.mx
+ * contacto@daitum.com.mx
+ *
+ * Este software es confidencial y de uso exclusivo de:
+ * Daitum Web Solutions - http://www.daitum.com.mx/
+
+@author DvdFortoul
+
+-->
+
+<!--[if IE 8 ]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> 
+<html lang="es"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Contacto | Daitum</title>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Retina Bookmark Icon     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="apple-touch-icon-precomposed" href="apple-icon.png"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Stylesheets Files       // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="CSS/style.css"/>
+        <link rel="stylesheet" href="CSS/media.css"/>
+        <link rel="stylesheet" href="CSS/revolution.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/media-slideshow.css" media="screen"/>
+        <link rel="stylesheet" href="CSS/noscript.css" media="screen,all" id="noscript"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //     Google Webfont Files     // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,700,500,900"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans"/>
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Pacifico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //        Favicon Files         // -->
+        <!-- ////////////////////////////////// -->
+        <link rel="shortcut icon" href="Images/favicon.ico"/>
+
+        <!-- ////////////////////////////////// -->
+        <!-- //      Javascript Files        // -->
+        <!-- ////////////////////////////////// -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+        <script src="JS/gmaps.js"></script>
+        <script src="JS/contact-form.js"></script>
+        <script src="JS/jquery.easing-1.3.min.js"></script>
+        <script src="JS/modernizr.js"></script>
+        <script src="JS/superfish.js"></script>
+        <script src="JS/jquery.carouFredSel-6.2.1-packed.js"></script>
+        <script src="JS/jquery.themepunch.plugins.min.js"></script>
+        <script src="JS/jquery.themepunch.revolution.min.js"></script>
+        <script src="JS/mediaelement-and-player.min.js"></script>
+        <script src="JS/jquery.fancybox.js?v=2.0.6"></script>
+        <script src="JS/jquery.fancybox-media.js?v=1.0.3"></script>
+        <script src="JS/jquery.donutchart.js"></script>
+        <script src="JS/jflickrfeed.min.js"></script>
+        <script src="JS/jquery.twitter.js"></script>
+        <script src="JS/accordion-functions.js" ></script>
+        <script src="JS/theme-functions.js"></script>
+        <script src="JS/jquery.retina.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r;
+                i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+                a = s.createElement(o),
+                        m = s.getElementsByTagName(o)[0];
+                a.async = 1;
+                a.src = g;
+                m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-66079829-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script>
+            $(document).ready(function () {
+                //Retina Image
+                $('img.retina').retina('@2x');
+
+                //Map Jquery
+                var map = new GMaps({
+                    el: '#map',
+                    lat: 19.279774,
+                    lng: -99.132468,
+                    zoom: 16,
+                    zoomControl: true,
+                    zoomControlOpt: {
+                        style: 'SMALL',
+                        position: 'TOP_LEFT'
+                    },
+                    panControl: false,
+                    streetViewControl: false,
+                    mapTypeControl: false,
+                    overviewMapControl: false
+                });
+
+                map.addMarker({
+                    lat: 19.279774,
+                    lng: -99.132468,
+                    icon: "Images/map-marker.png"
+                });
+
+                var styles = [
+                    {
+                        featureType: "road",
+                        elementType: "geometry",
+                        stylers: [
+                            {lightness: 100},
+                            {visibility: "simplified"}
+                        ]
+                    }, {
+                        featureType: "road",
+                        elementType: "labels",
+                        stylers: [
+                            {visibility: "off"}
+                        ]
+                    }
+                ];
+
+                map.addStyle({
+                    styledMapName: "Styled Map",
+                    styles: styles,
+                    mapTypeId: "map_style"
+                });
+
+                map.setStyle("map_style");
+            });
+        </script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    </head>
+    <body>
+        <!-- header start here -->
+        <header>
+
+            <!-- top info start here -->
+            <div id="top-info">
+                <div class="row">
+                    <div class="twelve column">
+                        <!-- logo start here -->
+                        <div id="logo">
+                            <a href="index.html">
+                                <img src="Images/logo.png" alt="Daitum" class="retina"/>
+                            </a>
+                        </div>           
+                        <!-- logo end here -->
+
+                        <div id="top-socials">
+                            <ul>                                
+                                <li class="facebook-color">
+                                    <a href="https://www.facebook.com/daitum.websolutions" target="_blank">
+                                        <i class="social-facebook"></i>
+                                    </a>
+                                </li>
+                                <li class="twitter-color">
+                                    <a href="https://twitter.com/DaitumWS" target="_blank">
+                                        <i class="social-twitter"></i>
+                                    </a>
+                                </li>
+                                <li class="googleplus-color">
+                                    <a href="https://plus.google.com/u/0/113460768975189169658/about" target="_blank">
+                                        <i class="social-googleplus"></i>
+                                    </a>
+                                </li>
+                                <li class="linkedin-color">
+                                    <a href="#" target="_blank">
+                                        <i class="social-linkedin"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- top info end here -->        
+
+            <div id="mainmenu-wrapper">
+                <div class="left-menu">
+
+                    <!-- navigation start here -->
+                    <nav id="mainmenu">
+                        <ul id="menu">
+                            <li class="dropdown">
+                                <a href="index.html">Inicio</a>
+                                <span class="desc-menu">Daitum WS</span>
+                            </li>                                                   
+                            <li class="dropdown">
+                                <a href="Daitum.html">Daitum</a>
+                                <span class="desc-menu">¿Quiénes Somos?</span>
+                                <ul> 
+                                    <li>
+                                        <a href="Proyectos.html">Proyectos</a>
+                                    </li>
+                                    <li>
+                                        <a href="Equipo.html">Nuestro Equipo</a>
+                                    </li>
+                                    <li>
+                                        <a href="Clientes.html">Nuestros Clientes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Galeria.html">Galería</a>
+                                <span class="desc-menu">Resultados</span>
+                            </li> 
+                            <li class="dropdown">
+                                <a href="Servicios.html">Servicios</a>
+                                <span class="desc-menu">¿Qué Ofrecemos?</span>
+                                <ul>
+                                    <li>
+                                        <a href="DisWeb.html">Diseño Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Plantillas.html">Plantillas</a>
+                                            </li>
+                                            <li>
+                                                <a href="Dmedida.html">Diseño a la Medida</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="DevWeb.html">Desarrollo Web</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Admincont.html">Administradores de Contenido</a>
+                                            </li>
+                                            <li>
+                                                <a href="Appmedida.html">Aplicaciones Web a la Medida</a>
+                                            </li>
+                                            <li>
+                                                <a href="Aplicaciones.html">Nuestras Aplicaciones Web</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Consultoria.html">Consultoría</a>
+                                        <ul>
+                                            <li>
+                                                <a href="Middleware.html">Middleware</a>
+                                            </li>
+                                            <li>
+                                                <a href="Software.html">Desarrollo</a>
+                                            </li>
+                                            <li>
+                                                <a href="Plataforma.html">Plataforma</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="Soporte.html">Soporte y Mantenimiento</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="Paquetes.html">Productos</a>
+                                <span class="desc-menu">Tienda en Linea</span>
+                                <ul>
+                                    <li>
+                                        <a href="Promociones.html">Promociones</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown selected">
+                                <a href="Contacto.html">Contacto</a>
+                                <span class="desc-menu">Contactanos</span>
+                                <ul>
+                                    <li>
+                                        <a href="Rsociales.html">Redes Sociales</a>
+                                    </li>
+                                    <li>
+                                        <a href="Testimonios.html">Testimonios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Comentarios.html">Comentarios</a>
+                                    </li>
+                                    <li>
+                                        <a href="Faqs.html">Preguntas Frecuentes (FAQs)</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#">Login</a>
+                                <span class="desc-menu">Iniciar Sesión</span>
+                                <ul>
+                                    <li>
+                                        <a href="http://clientes.daitum.com.mx/">Panel de Clientes</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Empleados</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!-- navigation end here --> 
+
+                </div>
+
+                <div class="right-menu" id="top-search">
+                    <a class="trigger" href="#"><i class="icon-search"></i></a>
+                    <div class="search-panel">
+                        <ul>
+                            <li>
+                                <form id="search" action="http://www.google.com/cse" method="get" target="_blank">
+                                    <fieldset class="search-fieldset">
+                                        <input type="hidden" name="cx" value="009928480916599957275:fdbqc9ch8m4" />
+                                        <input type="text" name="q" id="search-form" value="escribe y pulsa enter" onblur="if (this.value == '') {
+                                                    this.value = 'escribe y pulsa enter';
+                                                }" onfocus="if (this.value == 'escribe y pulsa enter') {
+                                                            this.value = '';
+                                                        }" />
+                                        <!--<!--<input type="hidden" name="q" value="site:www.daitum.com.mx" />-->-->
+                                    </fieldset>      						
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </header>
+        <!-- header end here -->
+
+        <!-- pagetitle start here -->
+        <section id="pagetitle-container">
+            <div class="row">
+                <div class="twelve column">
+                    <h1>Contáctanos</h1>
+                    <h3>Si estás interesado en un producto o servicio, nos encantaría escucharte y ayudarte.</h3>
+                </div>
+                <div class="twelve column breadcrumb">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li class="current-page"><a href="Contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>	        
+        </section>
+        <!-- pagetitle end here -->
+
+        <!-- content section start here -->
+        <section class="content-wrapper">
+            <div class="row">
+                <div class="four column">    
+                    <h3 class="title-line margin-bottom2"><span>Nuestra Guarida</span></h3>
+                    <ul class="no-bullet list-line-contact">
+                        <li>
+                            <div class="flatborder left">
+                                <i class="flat-clock small"></i>
+                            </div>
+                            <h6>Horario</h6>
+                            <p class="text-overflow">Lunes a Viernes / 10:00 - 16:00<br/>Sábados / 11:00 - 15:00</p>
+                        </li>
+
+                        <li>
+                            <div class="flatborder left">
+                                <i class="flat-map small"></i>
+                            </div>
+                            <h6>Domicilio</h6>
+                            <p class="text-overflow">Rincón del Sur 15 Edificio 15 Int. 9, <br>Bosque Residencial del Sur, Xochimilco, CDMX.</p>
+                        </li>
+
+                        <li>
+                            <div class="flatborder left">
+                                <i class="flat-phone2 small"></i>
+                            </div>
+                            <h6>Teléfono</h6>
+                            <p class="text-overflow">Teléfonos : <br>(55) 7595 5316<br>(044) 55 4766 4111</p>
+                        </li>
+                    </ul>                             
+                </div>
+
+                <div class="eight column">
+                    <p class="lead">Haznos saber todas tus dudas, con gusto aclararemos cada una de ellas.</p>
+                    <p> Si estás interesado en un servicio, no dudes en pedir una cotización sin costo ni compromiso.</p>
+
+                    <div id="contact-form-area">
+                        <!-- Contact Form Start //-->
+                        <form action="sendemail.php" id="contactform" name="contactform" method="post"> 
+                            <fieldset> 
+                                <label>Nombre <em>*</em></label>                           
+                                <input type="text" name="name" class="textfield" id="name" value="" placeholder="Tu Nombre" required/> 
+                                <label>E-mail <em>*</em></label> 
+                                <input type="email" name="email" class="textfield" id="email" value="" placeholder="Tu eMail" required/>                        
+                                <label>Asunto <em>*</em></label>
+                                <input type="text" name="subject" class="textfield" id="subject" value="" placeholder="Asunto" required/>
+                                <label>Mensaje <em>*</em></label>
+                                <textarea name="message" id="message" class="textarea" cols="2" rows="6" placeholder="Mensaje" required></textarea>
+                                <div class="clear"></div> 
+                                <label>&nbsp;</label>
+
+
+
+
+                                <button type="submit" name="submit" class="buttoncontact" id="buttonsend">Enviar</button>
+                                <span class="loading" style="display: none;">Espere un momento...</span>
+                                <div class="clear"></div>
+                            </fieldset> 
+                        </form>
+                        <!-- Contact Form End //-->
+                    </div>	
+                </div>     
+            </div>              
+        </section>
+        <!-- content section end here -->
+
+        <!-- bottom content start here -->
+        <section id="bottom-content">
+            <div id="map"></div>      
+        </section>
+        <!-- bottom content end here -->
+
+        <!-- footer start here -->
+        <footer>   
+            <div class="row">
+                <div class="nine column">
+                    <h6>Información de <a href="Contacto.html">Contacto</a></h6>
+                    <!--<div class="say-hello">
+                        <h4><a href="Contacto.html">¡Hola!</a></h4>
+                    </div>-->
+                    <ul class="footer-address no-bullet">
+                        <li class="address">Rincón del Sur 15 Edificio 15 Int. 9, Bosque Residencial del Sur, Xochimilco, CDMX.</li>
+                        <li class="phone">(55) 7595 5316</li>
+                        <li class="email"><a href="mailto:contacto@daitum.com.mx">contacto@daitum.com.mx</a></li>
+                    </ul>
+
+                    <ul class="footer-link no-bullet">
+                        <li><a href="Avisopriv.html">Aviso Privacidad</a></li>
+                        <li><a href="Avisoleg.html">Aviso Legal</a></li>
+                        <li><a href="Terminos.html">Términos de Servicio</a></li>
+                        <li><a href="Faqs.html">FAQs</a></li>
+                        <li><a href="Sitemap.html">Site Map</a></li>
+                    </ul>		
+                </div>
+
+                <div class="three column">
+                    <img src="Images/logo.png" alt="Daitum" class="footer-logo retina" />
+                    <p>Logos y Nombres registrados por marca Daitum.</p>
+                    <p>&copy; 2014-2017 by Daitum. All Rights Reserved.</p>	
+                </div>       
+            </div>
+        </footer>
+        <!-- footer end here -->
+
+        <script>$('#noscript').remove();</script>
+    </body>
+</html>
